@@ -1,0 +1,73 @@
+@import "vars"
+
+/*==========  header  ==========*/
+header
+  padding: 16px 0 25px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    bottom: 0
+    transform: translateX(-50%)
+    background: #E0E0E0
+    width: 100%
+    padding: 0 10px
+    max-width: 1180px
+
+.logo
+  display: flex
+  align-items: center
+  width: 100%
+  max-width: 177px
+
+.phone
+  font-size: 16px
+  font-weight: 500
+  color: #000
+  &:hover
+    color: $accent
+
+
+.header-box
+  position: relative
+  line-height: 25px
+  padding: 0 0 0 30px
+  .svg-icon
+    position: absolute
+    left: 0
+    top: 5px
+    display: flex
+    align-items: center
+    justify-content: center
+    fill: $accent
+    width: 19px
+    height: 19px
+  h4
+    color: $accent
+    font-weight: 900
+
+
+.menu
+  margin: 24px 0 0
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-size: 16px
+  font-weight: 500
+  li
+    a
+      padding: 0 0 5px
+      color: #000
+      border-bottom: 2px solid transparent
+      &:hover
+        color: #000
+        border-bottom-color: $accent
+
+/*==========  header end  ==========*/
+
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
