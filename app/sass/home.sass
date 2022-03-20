@@ -1,32 +1,652 @@
 @import "vars"
 
 /*==========  section  ==========*/
+.nav-menu-tab
+  width: 100%
+  .nav-item
+    flex: 1
+  .nav-link
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 10px
+    background: #B5B5B5
+    border-radius: 3px
+    color: #ffffff
+    font-size: 16px
+    font-weight: 900
+    &.active
+      background: $accent
+      color: #fff
 
+.tab-content
+  width: 100%
+  background: #fff
+  border: 1px solid #E0E0E0
+    radius: 3px
+  margin: -3px 0 0
+  z-index: 1
+  position: relative
+  padding: 15px 0 17px 0
+
+.menu-category
+  li
+    margin: 0 0 17px
+    &:last-child
+      margin: 0
+    a
+      color: #414141
+      padding: 0 23px 0 31px
+
+      &:hover
+        color: $accent
+  .dropdown-menu
+    width: 100%
+    min-width: auto
+    max-width: none
+    position: relative !important
+    top: 0 !important
+    transform: none !important
+    left: 0 !important
+    right: 0 !important
+    box-shadow: none
+    border: none
+      radius: 0
+    padding: 0
+    margin: 0 0 10px
+    color: #414141
+    font-size: 16px
+    line-height: 35px
+    .dropdown-item
+      padding: 0 10px 0 56px
+      &:hover
+        background: $accent
+        color: #fff
+        font-weight: bold
+  .dropdown.show
+    .btn-dropdown
+
+      .dropdown-toggle
+        transform: rotate(180deg)
+
+.sidebar
+  width: 100%
+  margin: 0 0 29px
 /*==========  section end  ==========*/
 
 /*==========  section  ==========*/
+.content
+  width: 100%
 
+.banner
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  .box-text
+    color: #fff
+  h4
+    margin: 0 0 22px
+    font-weight: 900
+    font-size: 25px
+    line-height: 30px
+
+
+.banner-content
+  width: 380px
+  background: $accent
+  color: #fff
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: center
+  padding: 20px 44px
+
+
+.banner-img
+  width: calc(100% - 380px)
+  height: 250px
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.banner-sale
+  width: 100%
+  position: relative
+  &__title
+    width: 100%
+    position: absolute
+    bottom: 48px
+    color: #fff
+    text-align: center
+    text-transform: uppercase
+    background: #D90000
+    padding: 4px
+    font-size: 35px
+    font-weight: bold
+    font-family: $font
+  img
+    width: 100%
+
+.popular-category
+  margin: 59px 0 40px
+  h2
+    margin: 0 0 17px
+  .box-text
+    margin: 0 0 41px
+
+
+.popular-category-box
+  width: 100%
+  height: 100%
+  background: $accent
+  border-radius: 3px
+  &__img
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    background: #fff
+    border: 1px solid #F8F8F8
+      radius: 3px
+    height: 165px
+    overflow: hidden
+    img
+      max-height: 100%
+      width: auto
+  &__body
+    padding: 16px 20px 24px
+    height: calc(100% - 165px)
+    display: flex
+    flex-direction: column
+  .links
+    margin: auto 0 0
+  &__name
+    color: #fff
+    font-weight: 900
+    font-size: 18px
+  .box-text
+    margin: 12px 0
+    color: #fff
+
+.popular-products-box
+  width: 100%
+  height: 100%
+  border: 1px solid #E0E0E0
+    radius: 3px
+  background: #fff
+  &__img
+    width: 100%
+    height: 159px
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 12px
+    img
+      max-height: 100%
+      width: auto
+  &__body
+    width: 100%
+    height: calc(100% - 159px)
+    padding: 20px 20px 15px
+    display: flex
+    flex-direction: column
+  &__name
+    color: #000000
+    font-size: 18px
+    font-weight: 900
+    &:hover
+      color: $accent
+  .links
+    margin: auto 0 0
+
+.price
+  color: $accent
+  margin: 30px 0 15px
+  font-size: 18px
+  font-weight: bold
+
+.popular-products
+  margin: 40px 0 0
 /*==========  section end  ==========*/
 
-/*==========  section  ==========*/
+/*==========  section seo-section ==========*/
+.seo-section
+  margin: 47px 0 83px
+  h2
+    margin: 0 0 14px
+/*==========  section seo-section end  ==========*/
 
-/*==========  section end  ==========*/
+/*==========  section materials ==========*/
+.materials
+  h2
+    margin: 0 0 14px
+  .box-text
+    margin: 0 0 44px
 
-/*==========  section  ==========*/
+.materials-slider
+  position: relative
+  padding: 0 100px
 
-/*==========  section end  ==========*/
+  .slick-list
+    margin: 0 -10px
 
-/*==========  section  ==========*/
+  .slick-slide
+    padding: 0 10px
 
-/*==========  section end  ==========*/
+.materials-box
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 145px
+  margin: 0 auto
+  height: 70px
+  img
+    max-height: 100%
+    width: auto
+    filter: grayscale(100%)
+/*==========  section materials end  ==========*/
 
-/*==========  section  ==========*/
+/*==========  section advantages ==========*/
+.advantages
+  margin: 80px 0 83px
+  position: relative
+  padding: 48px 0
+  z-index: 1
 
-/*==========  section end  ==========*/
+  h2
+    color: #fff
+    margin: 0 0 14px
 
-/*==========  section  ==========*/
+.advantages-content
+  position: relative
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    top: -48px
+    right: 0
+    border-radius: 3px
+    background: $accent
+    width: 100%
+    min-width: 1000px
+    height: calc(100% + 120px)
+    z-index: -1
+  .box-text
+    color: #fff
+    max-width: 322px
 
-/*==========  section end  ==========*/
+.advantages-box
+  position: relative
+  margin: 0 0 30px
+  padding: 0 0 0 77px
+  .svg-icon
+    position: absolute
+    left: 0
+    top: 0
+    width: 37px
+    height: 52px
+    fill: $accent
+  &:last-child
+    margin: 0
+  h4
+    margin: 0 0 12px
+    font-size: 21px
+    font-weight: 900
+  .box-text
+    max-width: 260px
+/*==========  section advantages end  ==========*/
+
+/*==========  section certificate ==========*/
+.certificate
+  h2
+    margin: 0 0 14px
+  .box-text
+    margin: 0 0 45px
+
+.certificate-slider
+  position: relative
+  padding: 0 100px
+
+  .slick-list
+    margin: 0 -10px
+
+  .slick-slide
+    padding: 0 10px
+
+.certificate-box
+  width: 100%
+  height: 260px
+  background: #F1F1F1
+
+
+/*==========  section certificate end  ==========*/
+
+/*==========  section news ==========*/
+.news
+  margin: 67px 0 74px
+  h2
+    margin: 0 0 39px
+
+.news-card
+  width: 100%
+  height: 100%
+  border: 1px solid #E0E0E0
+    radius: 3px
+  background: #fff
+  &__img
+    width: 100%
+    height: 153px
+    background: #C4C4C4
+    border-radius: 3px 3px 0 0
+  &__body
+    width: 100%
+    padding: 13px 30px 25px
+  h4
+    font-size: 21px
+    font-weight: 900
+  &__line
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 7px 0 10px
+    color: #B5B5B5
+    font-size: 13px
+    font-weight: 500
+  .box-text
+    margin: 0 0 11px
+/*==========  section news end  ==========*/
+
+/*==========  section faq ==========*/
+.faq
+  margin: 74px 0 34px
+  h2
+    margin: 0 0 33px
+
+.accordion
+  border: none
+  .card
+    width: 100%
+    border: none
+      radius: 0
+      top: 1px solid #EBEBEB
+      bottom: 1px solid #EBEBEB
+    &:last-child
+      border-bottom: none
+  .card-header
+    padding: 20px 23px 20px 0
+    background: transparent
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 0
+    border: none
+    cursor: pointer
+    h4
+      font-weight: bold
+      color: #000000
+      line-height: 152.5%
+    &.collapsed
+      .accordion-icon
+        transform: none
+        fill: $accent
+  .card-body
+    padding: 11px 100px 11px 0
+
+    .box-text
+      color: #414141
+
+.accordion-icon
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 26px
+  height: 26px
+  transform: rotate(45deg)
+  fill: #BDBDBD
+
+/*==========  section faq end  ==========*/
+
+/*==========  section reviews  ==========*/
+.reviews
+  position: relative
+  padding: 53px 0 0
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: -54px
+    border-radius: 3px
+    background: $accent
+    height: 100%
+    width: 894px
+    z-index: -1
+  h2
+    margin: 0 0 14px
+    color: #fff
+  .box-text
+    max-width: 382px
+    color: #fff
+    margin: 0 0 36px
+  .list-star
+    .svg-icon
+      fill: #FFC107
+    .star0
+      .svg-icon
+        fill: none
+        stroke: #FFC107
+
+.vote
+  margin: 3px 0 0
+  line-height: 30px
+  font-size: 14px
+  color: $accent
+
+.rating-box-wrapper
+  display: flex
+  align-items: center
+  color: #373737
+  font-size: 16px
+  font-weight: bold
+  p
+    margin: 0 15px 0 0
+
+
+.reviews-slider
+  .slick-list
+    margin: 0 -10px
+  .slick-slide
+    padding: 0 10px
+
+.reviews-slider-box
+  width: 100%
+  background: #ffffff
+  border: 1px solid #E0E0E0
+    radius: 10px
+  padding: 38px 30px 40px 44px
+  &__head
+    width: 100%
+    display: flex
+    align-items: center
+    margin: 0 0 18px
+  &__avatar
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 20px 0 0
+    overflow: hidden
+    border-radius: 50%
+    width: 68px
+    height: 68px
+    min-width: 68px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__name
+    margin: 0 auto 0 0
+    h4
+      font-size: 21px
+      font-weight: 900
+      margin: 0 0 6px
+    p
+      font-size: 14px
+      font-weight: 500
+      color: $accent
+  .box-text
+    color: #414141
+    max-width: none
+    margin: 0
+
+.add-reviews
+  margin: 57px 0 0
+  h2
+    margin: 0 0 49px
+
+.form-reviews
+  input
+    border: 1px solid #E0E0E0
+  label
+    margin: 0 0 18px
+    &:last-child
+      margin: 0
+  .rating-box-wrapper
+    margin: 30px 0 25px
+    color: #414141
+    font-weight: 900
+  .list-star
+    li
+      fill: #FFC107
+      width: 24px
+      height: 23px
+      margin: 0 6px 0 0
+    .star0
+      fill: none
+      stroke: #FFC107
+
+.btn-add-reviews
+  margin: 4px auto 0
+
+.checkbox
+  display: flex
+  align-items: center
+  color: #B5B5B5
+  width: 100%
+  margin: 0
+  font-size: 10px
+  font-weight: 500
+  cursor: pointer
+
+.inp-check
+  display: none
+
+.checkbox-custom
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  margin: 0 10px 0 0
+  width: 20px
+  height: 20px
+  min-width: 20px
+  border: 1px solid #F4F4F4
+  background: #F9F9FA
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 14px
+    height: 14px
+
+.inp-check:checked + .checkbox-custom
+  &:before
+    background: url("../img/check.svg") no-repeat center
+      size: 100%
+
+.reviews-hidden
+  display: none
+/*==========  section reviews end  ==========*/
+
+/*==========  section staff  ==========*/
+.staff
+  margin: 80px 0
+  h2
+    margin: 0 0 37px
+
+.staff-box
+  width: 100%
+  height: 319px
+  position: relative
+  overflow: hidden
+  border-radius: 3px
+  display: flex
+  align-items: flex-start
+  justify-content: flex-start
+  &__img
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: flex-start
+    filter: grayscale(100%)
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__content
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-end
+    position: absolute
+    left: 0
+    bottom: 0
+    z-index: 1
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 44.86%)
+    padding: 17px
+    font-size: 15px
+    line-height: 159.5%
+    color: #fff
+  h3
+    font-size: 25px
+    font-weight: bold
+  &__phone
+    color: #fff
+    margin: 17px auto 0
+    font-size: 18px
+    line-height: 159.5%
+    font-weight: 900
+    &:hover
+      color: $accent
+
+.an-experience
+  color: $accent
+/*==========  section staff end  ==========*/
+
+/*==========  callback  ==========*/
+.callback
+  margin: 81px 0 87px
+
+.form
+  button
+    padding: 0 20px
+    width: 100%
+
+.callback-wrapper
+  padding: 33px 0 60px
+  border-radius: 3px
+/*==========  callback end  ==========*/
 
 /*==========  section map  ==========*/
 .map
@@ -34,7 +654,3 @@
   height: 421px
   background: #C4C4C4
 /*==========  section map end  ==========*/
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/

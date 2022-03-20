@@ -32,6 +32,83 @@
 
 <body>
 
+<div class="mobile-menu">
+  <div class="mobile-menu__body">
+    <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+    <div class="btn-close">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </div>
+
+    <div class="header-box address-box">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#location"></use>
+      </svg>
+      <div class="city">г. Санкт-Петербург</div>
+      <div class="address">ул. Гертьева, д. 14, лит. А, офис 100</div>
+    </div>
+
+    <ul class="menu my-ul">
+      <li><a href="catalog.html">Продукция</a></li>
+      <li><a href="#">Аренда</a></li>
+      <li><a href="#">Наше производство</a></li>
+      <li class="dropdown">
+        <a href="#" class="btn btn-dropdown" data-toggle="dropdown" aria-haspopup="true"
+           aria-expanded="false">О компании
+          <span class="dropdown-toggle"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+        </a>
+
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">
+            <span>Новости</span>
+          </a>
+          <a href="#" class="dropdown-item">
+            <span>Акции</span>
+          </a>
+          <a href="#" class="dropdown-item">
+            <span>Гарантия</span>
+          </a>
+          <a href="#" class="dropdown-item">
+            <span>Пункт в несколько строк
+и еще немного текста</span>
+          </a>
+        </div>
+      </li>
+      <li><a href="#">Доставка и оплата</a></li>
+      <li><a href="#">Галерея</a></li>
+      <li><a href="#">Вопрос-ответ</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+
+    <div class="header-button">
+      <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a>
+      <div class="schedule">Пн-Пт: 9.00 - 18.00</div>
+    </div>
+  </div>
+
+  <div class="mobile-menu__footer">
+    <div class="header-box">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#phone"></use>
+      </svg>
+      <h4>Отдел продаж:</h4>
+      <a class="phone" href="tel:+78127110747">+7 (812) 711-07-47</a>
+      <a class="phone" href="tel:+78129247373">+7 (812) 924-73-73</a>
+    </div>
+
+    <div class="header-box">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#phone"></use>
+      </svg>
+      <h4>Отдел аренды:</h4>
+      <a class="phone" href="tel:+78127110747">+7 (812) 711-07-47</a>
+      <a class="phone" href="tel:+78129247373">+7 (812) 924-73-73</a>
+    </div>
+  </div>
+</div>
+
 
 <!--### HEADER ###-->
 <header>
@@ -53,12 +130,13 @@
             <use xlink:href="img/sprite.svg#phone"></use>
           </svg>
           <h4>Отдел продаж:</h4>
-          <div class="dropdown">
-            <a href="tel:+78127110747" class="phone" type="button">
+          <div class="dropdown dropdown-phone">
+            <button class="phone" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
               +7 (812) 711-07-47
-              <span class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false"></span>
-            </a>
+              <span class="dropdown-toggle"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+            </button>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="tel:+78129247373">+7 (812) 924-73-73</a>
               <a class="dropdown-item" href="tel:+78127110747">+7 (812) 711-07-47</a>
@@ -71,12 +149,13 @@
             <use xlink:href="img/sprite.svg#phone"></use>
           </svg>
           <h4>Отдел аренды:</h4>
-          <div class="dropdown">
-            <a href="tel:+78127110747" class="phone" type="button">
+          <div class="dropdown dropdown-phone">
+            <button class="phone" type="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
               +7 (812) 711-07-47
-              <span class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false"></span>
-            </a>
+              <span class="dropdown-toggle"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+            </button>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="tel:+78129247373">+7 (812) 924-73-73</a>
               <a class="dropdown-item" href="tel:+78127110747">+7 (812) 711-07-47</a>
@@ -90,13 +169,18 @@
         </div>
       </div>
 
-      <div class="col-12 d-flex flex-wrap align-items-center">
+      <div class="col-12 d-flex align-items-center mt-24">
         <ul class="menu my-ul">
           <li><a href="catalog.html">Продукция</a></li>
           <li><a href="#">Аренда</a></li>
           <li><a href="#">Наше производство</a></li>
           <li class="dropdown">
-            <a href="#">О компании</a>
+            <a href="#" class="btn btn-dropdown" data-toggle="dropdown" aria-haspopup="true"
+               aria-expanded="false">О компании
+              <span class="dropdown-toggle"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+            </a>
+
             <div class="dropdown-menu">
               <a href="#" class="dropdown-item">
                 <svg class="svg-icon">
@@ -141,47 +225,1156 @@
 </header>
 <!--### HEADER end ###-->
 
-
 <!--### SECTION  ###-->
-<section class="">
+<section class="home">
   <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-3">
+        <div class="sidebar">
+          <ul class="nav nav-menu-tab" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                 aria-controls="pills-home" aria-selected="true">Продажа</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                 aria-controls="pills-profile" aria-selected="false">Аренда</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <ul class="menu-category my-ul">
+                <li>
+                  <a href="#">Вышки-туры стальные
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Вышки-туры алюминиевые
+                  </a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="btn-dropdown" data-toggle="dropdown">Леса строительные
+                    <span class="dropdown-toggle"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+                  </a>
+                  <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Пункт 1</a>
+                    <a href="#" class="dropdown-item">Пункт 2</a>
+                    <a href="#" class="dropdown-item">Пункт 3</a>
+                    <a href="#" class="dropdown-item">Пункт 4</a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">Люльки фасадные
+                  </a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="btn-dropdown" data-toggle="dropdown">Тепловые пушки
+                    <span class="dropdown-toggle"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+                  </a>
+                  <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Пункт 1</a>
+                    <a href="#" class="dropdown-item">Пункт 2</a>
+                    <a href="#" class="dropdown-item">Пункт 3</a>
+                    <a href="#" class="dropdown-item">Пункт 4</a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">Лестницы универсальные</a>
+                </li>
+                <li>
+                  <a href="#">Стремянки алюминиевые/стальные</a>
+                </li>
+                <li>
+                  <a href="#">Подмости каменщика
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Сетки фасадные и пленки
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Еара для раствора
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Ограждения инвентарные
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Тележки гидравлические</a>
+                </li>
+                <li>
+                  <a href="#">Лебедки электрические</a>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <ul class="menu-category my-ul">
+                <li>
+                  <a href="#">Вышки-туры стальные
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Вышки-туры алюминиевые
+                  </a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="btn-dropdown" data-toggle="dropdown">Леса строительные
+                    <span class="dropdown-toggle"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+                  </a>
+                  <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Пункт 1</a>
+                    <a href="#" class="dropdown-item">Пункт 2</a>
+                    <a href="#" class="dropdown-item">Пункт 3</a>
+                    <a href="#" class="dropdown-item">Пункт 4</a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">Люльки фасадные
+                  </a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="btn-dropdown" data-toggle="dropdown">Тепловые пушки
+                    <span class="dropdown-toggle"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+                  </a>
+                  <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Пункт 1</a>
+                    <a href="#" class="dropdown-item">Пункт 2</a>
+                    <a href="#" class="dropdown-item">Пункт 3</a>
+                    <a href="#" class="dropdown-item">Пункт 4</a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">Лестницы универсальные</a>
+                </li>
+                <li>
+                  <a href="#">Стремянки алюминиевые/стальные</a>
+                </li>
+                <li>
+                  <a href="#">Подмости каменщика
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Сетки фасадные и пленки
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Еара для раствора
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Ограждения инвентарные
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Тележки гидравлические</a>
+                </li>
+                <li>
+                  <a href="#">Лебедки электрические</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
+        <div class="banner-sale">
+          <img src="img/banner1.jpeg" alt="">
+          <div class="banner-sale__title">Акция</div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-9">
+        <div class="content">
+          <div class="banner">
+            <div class="banner-img"><img src="img/img1.jpeg" alt=""></div>
+            <div class="banner-content">
+              <h4>Вышки-туры</h4>
+              <div class="box-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="popular-category">
+            <h2>Популярные категории</h2>
+            <div class="box-text">
+              <p>В разделе представлены категории наиболее востребованного оборудования для ремонтно-строительных
+                работ.</p>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4 mb-28">
+                <div class="popular-category-box">
+                  <a href="product.html" class="popular-category-box__img"><img src="img/product1.jpeg" alt=""></a>
+                  <div class="popular-category-box__body">
+                    <a href="product.html" class="popular-category-box__name">Вышки-туры</a>
+                    <div class="box-text">
+                      <p>Мобильные, компактные и надежные вышки-туры...</p>
+                    </div>
+                    <a href="product.html" class="links-white links">
+                      <span class="links-text">Посмотреть товары</span>
+                      <span class="links-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4 mb-28">
+                <div class="popular-category-box">
+                  <a href="product.html" class="popular-category-box__img"><img src="img/product2.png" alt=""></a>
+                  <div class="popular-category-box__body">
+                    <a href="product.html" class="popular-category-box__name">Леса строительные</a>
+                    <div class="box-text">
+                      <p>Надежные строительные леса рамного, штыревого...</p>
+                    </div>
+                    <a href="product.html" class="links-white links">
+                      <span class="links-text">Посмотреть товары</span>
+                      <span class="links-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4 mb-28">
+                <div class="popular-category-box">
+                  <a href="product.html" class="popular-category-box__img"><img src="img/product3.jpeg" alt=""></a>
+                  <div class="popular-category-box__body">
+                    <a href="product.html" class="popular-category-box__name">Лестницы универсальные и стремянки
+                      алюминиевые/стальные
+                    </a>
+                    <a href="product.html" class="links-white links">
+                      <span class="links-text">Посмотреть товары</span>
+                      <span class="links-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-accent">
+              <span class="btn-text">Показать все</span>
+              <span class="btn-arrow-bottom"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+            </a>
+          </div>
+
+          <div class="popular-products popular-category">
+            <h2>Популярные товары</h2>
+            <div class="box-text">
+              <p>Это оборудование наиболее часто покупают и арендуют наши клиенты.</p>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4 mb-15">
+                <div class="popular-products-box">
+                  <a href="product.html" class="popular-products-box__img"><img src="img/product4.png" alt=""></a>
+                  <div class="popular-products-box__body">
+                    <a href="product.html" class="popular-products-box__name">Вышка тура передвижная мега-1
+                      (1,6х0,8) </a>
+                    <div class="price">от 10 141 ₽</div>
+                    <a href="product.html" class="links-grey links">
+                      <span class="links-text">подробнее</span>
+                      <span class="links-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-15">
+                <div class="popular-products-box">
+                  <a href="product.html" class="popular-products-box__img"><img src="img/product4.png" alt=""></a>
+                  <div class="popular-products-box__body">
+                    <a href="product.html" class="popular-products-box__name">Вышка строительная передвижная мега-2
+                      (2х1) </a>
+                    <div class="price">от 1 255 ₽</div>
+                    <a href="product.html" class="links-grey links">
+                      <span class="links-text">подробнее</span>
+                      <span class="links-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-15">
+                <div class="popular-products-box">
+                  <a href="product.html" class="popular-products-box__img"><img src="img/product3.jpeg" alt=""></a>
+                  <div class="popular-products-box__body">
+                    <a href="product.html" class="popular-products-box__name">Аренда стремянок и лестниц </a>
+                    <a href="product.html" class="links-grey links">
+                      <span class="links-text">подробнее</span>
+                      <span class="links-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-15">
+                <div class="popular-products-box">
+                  <a href="product.html" class="popular-products-box__img"><img src="img/product5.png" alt=""></a>
+                  <div class="popular-products-box__body">
+                    <a href="product.html" class="popular-products-box__name">Лестницы строительные раздвижные
+                      stairs</a>
+                    <div class="price">от 1 300 ₽</div>
+                    <a href="product.html" class="links-grey links">
+                      <span class="links-text">подробнее</span>
+                      <span class="links-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-15">
+                <div class="popular-products-box">
+                  <a href="product.html" class="popular-products-box__img"><img src="img/product6.jpeg" alt=""></a>
+                  <div class="popular-products-box__body">
+                    <a href="product.html" class="popular-products-box__name">Леса строительные
+                      до 40 метров </a>
+                    <a href="product.html" class="links-grey links">
+                      <span class="links-text">подробнее</span>
+                      <span class="links-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-15">
+                <div class="popular-products-box">
+                  <a href="product.html" class="popular-products-box__img"><img src="img/product4.png" alt=""></a>
+                  <div class="popular-products-box__body">
+                    <a href="product.html" class="popular-products-box__name">Строительные леса вышки-туры мега-3
+                      (2Х2)</a>
+                    <div class="price">от 16 965 ₽</div>
+                    <a href="product.html" class="links-grey links">
+                      <span class="links-text">подробнее</span>
+                      <span class="links-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-accent">
+              <span class="btn-text">Показать все</span>
+              <span class="btn-arrow-bottom"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 <!--### SECTION END ###-->
 
-<!--### SECTION  ###-->
-<section class="">
+<!--### SECTION seo-section ###-->
+<section class="seo-section">
   <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Heading</h2>
+        <div class="box-text">
+          <p>Oratio accumsan et mea. Per cu iracundia splendide. Eu cum iuvaret debitis voluptatibus, esse perfecto
+            reformidans id has. Per cu iracundia splendide. Tation delenit percipitur at vix. Lorem ipsum dolor sit
+            amet, an eos lorem ancillae expetenda, vim et utamur quaestio.</p>
 
+          <ul class="list-dots my-ul">
+            <li>An eos iusto solet, id mel dico habemus. Ius dicat feugiat no, vix cu modo dicat principes.</li>
+            <li>Odio contentiones sed cu, usu commodo prompta prodesset id.</li>
+            <li>Per cu iracundia splendide. Ius dicat feugiat no, vix cu modo dicat principes.</li>
+          </ul>
+
+          <p>Postulant assueverit ea his. Eu eam dolores lobortis percipitur, quo te equidem deleniti disputando. An nam
+            debet instructior, commodo mediocrem id cum. Oratio accumsan et mea. Nec labore cetero theophrastus no, ei
+            vero facer veritus nec. Odio contentiones sed cu, usu commodo prompta prodesset id.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
-<!--### SECTION END ###-->
+<!--### SECTION seo-section END ###-->
 
-
-<!--### SECTION  ###-->
-<section class="">
+<!--### SECTION materials ###-->
+<section class="materials">
   <div class="container">
-
+    <div class="row">
+      <div class="col-12">
+        <h2>Материалы</h2>
+        <div class="box-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua</p>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="materials-slider">
+          <div class="slide">
+            <div class="materials-box"><img src="img/google.png" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="materials-box"><img src="img/coca-cola.png" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="materials-box"><img src="img/google.png" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="materials-box"><img src="img/coca-cola.png" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="materials-box"><img src="img/google.png" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="materials-box"><img src="img/coca-cola.png" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="materials-box"><img src="img/google.png" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="materials-box"><img src="img/coca-cola.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
-<!--### SECTION END ###-->
+<!--### SECTION materials END ###-->
 
-<!--### SECTION  ###-->
-<section class="">
+<!--### SECTION advantages ###-->
+<section class="advantages">
   <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-4">
+        <div class="advantages-content">
+          <h2>Преимущества</h2>
+          <div class="box-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua</p>
 
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="advantages-box">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#location"></use>
+          </svg>
+          <h4>Преимущество</h4>
+          <div class="box-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+          </div>
+        </div>
+        <div class="advantages-box">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#location"></use>
+          </svg>
+          <h4>Преимущество</h4>
+          <div class="box-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="advantages-box">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#location"></use>
+          </svg>
+          <h4>Преимущество</h4>
+          <div class="box-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+          </div>
+        </div>
+        <div class="advantages-box">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#location"></use>
+          </svg>
+          <h4>Преимущество</h4>
+          <div class="box-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
-<!--### SECTION END ###-->
+<!--### SECTION advantages END ###-->
 
-<!--### SECTION  ###-->
-<section class="">
+<!--### SECTION certificate ###-->
+<section class="certificate">
   <div class="container">
-
+    <div class="row">
+      <div class="col-12">
+        <h2>Сертификаты и лицензии</h2>
+        <div class="box-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="certificate-slider">
+          <div class="slide">
+            <div class="certificate-box"></div>
+          </div>
+          <div class="slide">
+            <div class="certificate-box"></div>
+          </div>
+          <div class="slide">
+            <div class="certificate-box"></div>
+          </div>
+          <div class="slide">
+            <div class="certificate-box"></div>
+          </div>
+          <div class="slide">
+            <div class="certificate-box"></div>
+          </div>
+          <div class="slide">
+            <div class="certificate-box"></div>
+          </div>
+          <div class="slide">
+            <div class="certificate-box"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
-<!--### SECTION END ###-->
+<!--### SECTION certificate END ###-->
+
+<!--### SECTION news ###-->
+<section class="news">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Новости</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 mb-40">
+        <div class="news-card">
+          <div class="news-card__img"></div>
+          <div class="news-card__body">
+            <h4>Название новости</h4>
+            <div class="news-card__line">
+              <p>Тема новости</p>
+              <p>04.02.2021</p>
+            </div>
+            <div class="box-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+            </div>
+
+            <a href="#" class="links">
+              <span class="links-text">читать</span>
+              <span class="links-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-40">
+        <div class="news-card">
+          <div class="news-card__img"></div>
+          <div class="news-card__body">
+            <h4>Название новости в несколько строк и еще текст</h4>
+            <div class="news-card__line">
+              <p>Тема новости</p>
+              <p>04.02.2021</p>
+            </div>
+            <div class="box-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua
+                Lorem ipsum dolor sit amet, consectetur </p>
+            </div>
+
+            <a href="#" class="links">
+              <span class="links-text">читать</span>
+              <span class="links-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-40">
+        <div class="news-card">
+          <div class="news-card__img"></div>
+          <div class="news-card__body">
+            <h4>Название новости в несколько строк и еще текст</h4>
+            <div class="news-card__line">
+              <p>Тема новости</p>
+              <p>04.02.2021</p>
+            </div>
+            <div class="box-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua
+                Lorem ipsum dolor sit amet, consectetur </p>
+            </div>
+
+            <a href="#" class="links">
+              <span class="links-text">читать</span>
+              <span class="links-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <a href="#" class="btn btn-accent btn-toggle">
+          <span class="btn-text">Еще новости</span>
+          <span class="btn-arrow-bottom"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--### SECTION news END ###-->
+
+
+<!--### SECTION faq ###-->
+<section class="faq">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>FAQ </h2>
+
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne" data-toggle="collapse"
+                 data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore</h4>
+              <div class="accordion-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#plus"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="headingTwo" data-toggle="collapse"
+                 data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+              <div class="accordion-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#plus"></use>
+                </svg>
+              </div>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="headingThree" data-toggle="collapse"
+                 data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore </h4>
+              <div class="accordion-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#plus"></use>
+                </svg>
+              </div>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="headingFour" data-toggle="collapse"
+                 data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+              <div class="accordion-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#plus"></use>
+                </svg>
+              </div>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="headingFive" data-toggle="collapse"
+                 data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+              <div class="accordion-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#plus"></use>
+                </svg>
+              </div>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--### SECTION faq END ###-->
+
+<!--### SECTION reviews ###-->
+<section class="reviews">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Отзывы</h2>
+      </div>
+      <div class="col-12 col-md-5">
+
+        <div class="box-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4 col-md-4 offset-lg-1">
+        <div class="rating-box">
+          <div class="rating-box-wrapper">
+            <p>Средний рейтинг</p>
+            <ul class="list-star my-ul">
+              <li>
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#star"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+          <div class="vote">Голосов 15; Средний рейтинг 5</div>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-3 d-none d-md-block">
+        <div class="slider-nav reviews-slider__nav"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="reviews-slider">
+          <div class="slide">
+            <div class="reviews-slider-box">
+              <div class="reviews-slider-box__head">
+                <div class="reviews-slider-box__name">
+                  <h4>Имя фамилия</h4>
+                  <p>Название продукции</p>
+                </div>
+                <ul class="list-star my-ul">
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="star0">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star0"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+              <div class="reviews-slider-box__body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="reviews-slider-box">
+              <div class="reviews-slider-box__head">
+                <div class="reviews-slider-box__avatar"><img src="img/photo.png" alt=""></div>
+                <div class="reviews-slider-box__name">
+                  <h4>Имя фамилия</h4>
+                  <p>Название продукции</p>
+                </div>
+                <ul class="list-star my-ul">
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+              <div class="reviews-slider-box__body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="reviews-slider-box">
+              <div class="reviews-slider-box__head">
+                <div class="reviews-slider-box__name">
+                  <h4>Имя фамилия</h4>
+                  <p>Название продукции</p>
+                </div>
+                <ul class="list-star my-ul">
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li class="star0">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star0"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+              <div class="reviews-slider-box__body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="reviews-slider-box">
+              <div class="reviews-slider-box__head">
+                <div class="reviews-slider-box__avatar"><img src="img/photo.png" alt=""></div>
+                <div class="reviews-slider-box__name">
+                  <h4>Имя фамилия</h4>
+                  <p>Название продукции</p>
+                </div>
+                <ul class="list-star my-ul">
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+              <div class="reviews-slider-box__body">
+                <div class="box-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+<!--### SECTION reviews END ###-->
+
+<section class="add-reviews">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="reviews-hidden">
+          <h2>Вы также можете оставить свой отзыв о продукции</h2>
+
+          <form method="post" class="form-reviews form">
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <label>
+                  <input type="text" name="name" placeholder="Имя фамилия ">
+                </label>
+                <label>
+                  <input type="text" name="name_product" placeholder="Название продукции">
+                </label>
+
+                <div class="rating-box-wrapper">
+                  <p>Рейтинг</p>
+                  <ul class="list-star my-ul">
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li class="star0">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star0"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+                <label class="checkbox">
+                  <input type="checkbox" name="checkbox" class="inp-check" checked>
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Я согласен с политикой обработки персональных данных</span>
+                </label>
+              </div>
+
+              <div class="col-12 col-lg-6">
+                <label>
+                  <textarea name="comment" placeholder="Отзыв"></textarea>
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <a href="#" class="btn btn-accent btn-add-reviews">
+          <span class="btn-text">Оставить отзыв</span>
+          <span class="btn-arrow-bottom"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--### SECTION staff ###-->
+<section class="staff">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Сотрудники</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="staff-box">
+          <div class="staff-box__content">
+            <h3>Александр</h3>
+            <a href="tel:+78127110747" class="staff-box__phone">+7 (812) 711-07-47</a>
+            <div class="an-experience">Опыт работы - 3 года</div>
+          </div>
+          <div class="staff-box__img">
+            <img src="img/photo1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="staff-box">
+          <div class="staff-box__content">
+            <h3>Станислав</h3>
+            <a href="tel:+78129247373" class="staff-box__phone">+7 (812) 924-73-73</a>
+            <div class="an-experience">Опыт работы - 5 лет</div>
+          </div>
+          <div class="staff-box__img">
+            <img src="img/photo2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="staff-box">
+          <div class="staff-box__content">
+            <h3>Артем</h3>
+            <a href="tel:+78127110747" class="staff-box__phone">+7 (812) 711-07-47</a>
+            <div class="an-experience">Опыт работы - 4.5 года</div>
+          </div>
+          <div class="staff-box__img">
+            <img src="img/photo3.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--### SECTION staff END ###-->
+
+<!--### SECTION callback  ###-->
+<section class="callback">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="callback-wrapper bg-blue color-white">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2>Есть вопросы?</h2>
+            </div>
+
+            <div class="col-12">
+              <form method="post" class="form">
+                <div class="row">
+                  <div class="col-12 offset-lg-2 col-lg-3">
+                    <label><input type="text" name="name" placeholder="Имя"></label>
+                  </div>
+                  <div class="col-12 col-lg-3">
+                    <label><input type="text" name="phone" placeholder="Телефон"></label>
+                  </div>
+                  <div class="col-12 col-lg-2">
+                    <button type="submit" class="btn btn-white">Отправить</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--### SECTION callback END ###-->
 
 
 <!--### SECTION map ###-->
@@ -283,7 +1476,11 @@
 </footer>
 <!--### FOOTER END ###-->
 
-<a href="#" class="btn-top-scroll"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-top"></use></svg></a>
+<a href="#" class="btn-top-scroll">
+  <svg class="svg-icon">
+    <use xlink:href="img/sprite.svg#arrow-top"></use>
+  </svg>
+</a>
 
 
 <script src="js/jquery.min.js"></script>
@@ -293,6 +1490,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/common.js"></script>
+<script src="js/home.js"></script>
 
 </body>
 </html>
