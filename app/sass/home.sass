@@ -1,6 +1,9 @@
 @import "vars"
 
 /*==========  section  ==========*/
+.home
+  margin: 38px 0 0
+
 .nav-menu-tab
   width: 100%
   .nav-item
@@ -73,6 +76,37 @@
 .sidebar
   width: 100%
   margin: 0 0 29px
+
+.form-search
+  display: none
+  width: 100%
+  position: relative
+  margin: 0 0 15px
+  input
+    border: 1px solid #E0E0E0
+      radius: 30px
+    padding: 0 180px 0 46px
+  button
+    position: absolute
+    right: 0
+    top: 0
+    .svg-icon
+      margin: 0 10px 0 0
+      fill: #fff
+      width: 14px
+      height: 14px
+
+.input-icon
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  left: 27px
+  width: 13px
+  height: 13px
+  fill: #898989
+  top: 50%
+  transform: translate(0,-50%)
 /*==========  section end  ==========*/
 
 /*==========  section  ==========*/
@@ -251,6 +285,67 @@
     max-height: 100%
     width: auto
     filter: grayscale(100%)
+
+.materials-box__wrap
+  .materials-box
+    &:last-child
+      display: none
+
+.menu-category-wrapper
+  width: 100%
+  margin: 23px 0 0
+
+.menu-category__nav
+  width: 100%
+  display: flex
+  align-items: stretch
+  position: relative
+  z-index: 1
+
+.menu-category__links
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 36px
+  color: #fff
+  background: #B5B5B5
+
+  font-size: 16px
+  font-weight: 900
+  flex: 1
+  &:first-child
+    border-radius: 3px 0 0 3px
+  &:last-child
+    border-radius: 0 3px 3px 0
+  .svg-icon
+    width: 10px
+    height: 5px
+    fill: none
+    stroke: #ffffff
+    margin: 0 0 0 10px
+  &.active
+    background: $accent
+    color: #fff
+
+
+.menu-category__info
+  display: none
+  width: 100%
+  padding: 11px 31px 49px
+  border: 1px solid #E0E0E0
+    radius: 3px
+  background: #fff
+  margin: -2px 0 0
+  position: relative
+
+  &.active
+    display: block
+
+.btn-collapse
+  width: 100%
+  bottom: 0
+  left: 0
+  position: absolute
 /*==========  section materials end  ==========*/
 
 /*==========  section advantages ==========*/
@@ -380,6 +475,8 @@
       bottom: 1px solid #EBEBEB
     &:last-child
       border-bottom: none
+    .card-header
+      margin-bottom: 0
   .card-header
     padding: 20px 23px 20px 0
     background: transparent
@@ -408,7 +505,9 @@
   align-items: center
   justify-content: center
   width: 26px
+  min-width: 26px
   height: 26px
+  margin: 0 12px 0 0
   transform: rotate(45deg)
   fill: #BDBDBD
 
@@ -435,7 +534,6 @@
   .box-text
     max-width: 382px
     color: #fff
-    margin: 0 0 36px
   .list-star
     .svg-icon
       fill: #FFC107
@@ -443,6 +541,9 @@
       .svg-icon
         fill: none
         stroke: #FFC107
+  .rating-box
+    margin: 50px 0 0
+
 
 .vote
   margin: 3px 0 0
@@ -461,10 +562,13 @@
 
 
 .reviews-slider
+  margin: 36px 0 0
   .slick-list
     margin: 0 -10px
   .slick-slide
     padding: 0 10px
+  &__nav
+    margin: 50px 0 0
 
 .reviews-slider-box
   width: 100%
@@ -505,6 +609,12 @@
     color: #414141
     max-width: none
     margin: 0
+
+.reviews-slider-box__wrap
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
 
 .add-reviews
   margin: 57px 0 0

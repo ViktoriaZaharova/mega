@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Мега - покоряем высоту</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/products.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="mobile-menu__body">
+    <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+    <div class="btn-close">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </div>
+
+    <div class="header-box address-box">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#location"></use>
+      </svg>
+      <div class="city">г. Санкт-Петербург</div>
+      <div class="address">ул. Гертьева, д. 14, лит. А, офис 100</div>
+    </div>
+
+    <ul class="menu my-ul">
+      <li><a href="catalog.html">Продукция</a></li>
+      <li><a href="#">Аренда</a></li>
+      <li><a href="#">Наше производство</a></li>
+      <li class="dropdown">
+        <a href="#" class="btn btn-dropdown" data-toggle="dropdown" aria-haspopup="true"
+           aria-expanded="false">О компании
+          <span class="dropdown-toggle"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+        </a>
+
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">
+            <span>Новости</span>
+          </a>
+          <a href="#" class="dropdown-item">
+            <span>Акции</span>
+          </a>
+          <a href="#" class="dropdown-item">
+            <span>Гарантия</span>
+          </a>
+          <a href="#" class="dropdown-item">
+            <span>Пункт в несколько строк
+и еще немного текста</span>
+          </a>
+        </div>
+      </li>
+      <li><a href="#">Доставка и оплата</a></li>
+      <li><a href="#">Галерея</a></li>
+      <li><a href="#">Вопрос-ответ</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+
+    <div class="header-button">
+      <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a>
+      <div class="schedule">Пн-Пт: 9.00 - 18.00</div>
+    </div>
+  </div>
+
+  <div class="mobile-menu__footer">
+    <div class="header-box">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#phone"></use>
+      </svg>
+      <h4>Отдел продаж:</h4>
+      <a class="phone" href="tel:+78127110747">+7 (812) 711-07-47</a>
+      <a class="phone" href="tel:+78129247373">+7 (812) 924-73-73</a>
+    </div>
+
+    <div class="header-box">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#phone"></use>
+      </svg>
+      <h4>Отдел аренды:</h4>
+      <a class="phone" href="tel:+78127110747">+7 (812) 711-07-47</a>
+      <a class="phone" href="tel:+78129247373">+7 (812) 924-73-73</a>
+    </div>
+  </div>
+</div>
+
+
+<!--### HEADER ###-->
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap align-items-center">
+        <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+        <div class="header-box address-box">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#location"></use>
+          </svg>
+          <div class="city">г. Санкт-Петербург</div>
+          <div class="address">ул. Гертьева, д. 14, лит. А, офис 100</div>
+        </div>
+
+        <div class="header-box">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+          <h4>Отдел продаж:</h4>
+          <div class="dropdown dropdown-phone">
+            <button class="phone" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+              +7 (812) 711-07-47
+              <span class="dropdown-toggle"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="tel:+78129247373">+7 (812) 924-73-73</a>
+              <a class="dropdown-item" href="tel:+78127110747">+7 (812) 711-07-47</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-box">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+          <h4>Отдел аренды:</h4>
+          <div class="dropdown dropdown-phone">
+            <button class="phone" type="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+              +7 (812) 711-07-47
+              <span class="dropdown-toggle"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="tel:+78129247373">+7 (812) 924-73-73</a>
+              <a class="dropdown-item" href="tel:+78127110747">+7 (812) 711-07-47</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-button">
+          <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a>
+          <div class="schedule">Пн-Пт: 9.00 - 18.00</div>
+        </div>
+
+        <a href="#" class="btn-search d-flex d-lg-none">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+        </a>
+
+        <div class="btn-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="col-12 d-lg-flex align-items-center mt-24 d-none">
+        <ul class="menu my-ul">
+          <li><a href="catalog.html">Продукция</a></li>
+          <li><a href="#">Аренда</a></li>
+          <li><a href="#">Наше производство</a></li>
+          <li class="dropdown">
+            <a href="#" class="btn btn-dropdown" data-toggle="dropdown" aria-haspopup="true"
+               aria-expanded="false">О компании
+              <span class="dropdown-toggle"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+            </a>
+
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+                <span>Новости</span>
+              </a>
+              <a href="#" class="dropdown-item">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+                <span>Акции</span>
+              </a>
+              <a href="#" class="dropdown-item">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+                <span>Гарантия</span>
+              </a>
+              <a href="#" class="dropdown-item">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+                <span>Пункт в несколько строк
+и еще немного текста</span>
+              </a>
+            </div>
+          </li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">Галерея</a></li>
+          <li><a href="#">Вопрос-ответ</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <a href="#" class="btn-search">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+<!--### HEADER end ###-->
+
+<!--### SECTION  ###-->
+<section class="home products-section page">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav aria-label="breadcrumb" class="nav-breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Библиотека</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="col-12 col-lg-3 d-none d-lg-block">
+        <div class="sidebar">
+          <ul class="nav nav-menu-tab" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                 aria-controls="pills-home" aria-selected="true">Продажа</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                 aria-controls="pills-profile" aria-selected="false">Аренда</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <ul class="menu-category my-ul">
+                <li>
+                  <a href="#">Вышки-туры стальные
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Вышки-туры алюминиевые
+                  </a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="btn-dropdown" data-toggle="dropdown">Леса строительные
+                    <span class="dropdown-toggle"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+                  </a>
+                  <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Пункт 1</a>
+                    <a href="#" class="dropdown-item">Пункт 2</a>
+                    <a href="#" class="dropdown-item">Пункт 3</a>
+                    <a href="#" class="dropdown-item">Пункт 4</a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">Люльки фасадные
+                  </a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="btn-dropdown" data-toggle="dropdown">Тепловые пушки
+                    <span class="dropdown-toggle"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+                  </a>
+                  <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Пункт 1</a>
+                    <a href="#" class="dropdown-item">Пункт 2</a>
+                    <a href="#" class="dropdown-item">Пункт 3</a>
+                    <a href="#" class="dropdown-item">Пункт 4</a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">Лестницы универсальные</a>
+                </li>
+                <li>
+                  <a href="#">Стремянки алюминиевые/стальные</a>
+                </li>
+                <li>
+                  <a href="#">Подмости каменщика
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Сетки фасадные и пленки
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Еара для раствора
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Ограждения инвентарные
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Тележки гидравлические</a>
+                </li>
+                <li>
+                  <a href="#">Лебедки электрические</a>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <ul class="menu-category my-ul">
+                <li>
+                  <a href="#">Вышки-туры стальные
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Вышки-туры алюминиевые
+                  </a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="btn-dropdown" data-toggle="dropdown">Леса строительные
+                    <span class="dropdown-toggle"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+                  </a>
+                  <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Пункт 1</a>
+                    <a href="#" class="dropdown-item">Пункт 2</a>
+                    <a href="#" class="dropdown-item">Пункт 3</a>
+                    <a href="#" class="dropdown-item">Пункт 4</a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">Люльки фасадные
+                  </a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="btn-dropdown" data-toggle="dropdown">Тепловые пушки
+                    <span class="dropdown-toggle"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+                  </a>
+                  <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Пункт 1</a>
+                    <a href="#" class="dropdown-item">Пункт 2</a>
+                    <a href="#" class="dropdown-item">Пункт 3</a>
+                    <a href="#" class="dropdown-item">Пункт 4</a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">Лестницы универсальные</a>
+                </li>
+                <li>
+                  <a href="#">Стремянки алюминиевые/стальные</a>
+                </li>
+                <li>
+                  <a href="#">Подмости каменщика
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Сетки фасадные и пленки
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Еара для раствора
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Ограждения инвентарные
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Тележки гидравлические</a>
+                </li>
+                <li>
+                  <a href="#">Лебедки электрические</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="banner-sale">
+          <img src="img/banner1.jpeg" alt="">
+          <div class="banner-sale__title">Акция</div>
+        </div>
+      </div>
+
+
+
+      <div class="col-12 col-lg-9">
+        <div class="content">
+          <div class="d-block d-lg-none">
+            <div class="menu-category-wrapper">
+              <div class="menu-category__nav">
+                <a href="#" class="menu-category__links active" data-tab="menu-category1">
+                  <span>Продажа</span>
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                  </svg>
+                </a>
+                <a href="#" class="menu-category__links" data-tab="menu-category2">
+                  <span>Аренда</span>
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="menu-category__info" data-tab="menu-category1">
+                <ul class="menu-category my-ul">
+                  <li>
+                    <a href="#">Вышки-туры стальные
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Вышки-туры алюминиевые
+                    </a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="btn-dropdown" data-toggle="dropdown">Леса строительные
+                      <span class="dropdown-toggle"><svg class="svg-icon"><use
+                          xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+                    </a>
+                    <div class="dropdown-menu">
+                      <a href="#" class="dropdown-item">Пункт 1</a>
+                      <a href="#" class="dropdown-item">Пункт 2</a>
+                      <a href="#" class="dropdown-item">Пункт 3</a>
+                      <a href="#" class="dropdown-item">Пункт 4</a>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#">Люльки фасадные
+                    </a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="btn-dropdown" data-toggle="dropdown">Тепловые пушки
+                      <span class="dropdown-toggle"><svg class="svg-icon"><use
+                          xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+                    </a>
+                    <div class="dropdown-menu">
+                      <a href="#" class="dropdown-item">Пункт 1</a>
+                      <a href="#" class="dropdown-item">Пункт 2</a>
+                      <a href="#" class="dropdown-item">Пункт 3</a>
+                      <a href="#" class="dropdown-item">Пункт 4</a>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#">Лестницы универсальные</a>
+                  </li>
+                  <li>
+                    <a href="#">Стремянки алюминиевые/стальные</a>
+                  </li>
+                  <li>
+                    <a href="#">Подмости каменщика
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Сетки фасадные и пленки
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Еара для раствора
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Ограждения инвентарные
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Тележки гидравлические</a>
+                  </li>
+                  <li>
+                    <a href="#">Лебедки электрические</a>
+                  </li>
+                </ul>
+                <a href="#" class="btn btn-grey btn-collapse">
+                  <span class="btn-text">Свернуть</span>
+                  <span class="btn-icon"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-top"></use></svg></span>
+                </a>
+              </div>
+
+              <div class="menu-category__info" data-tab="menu-category2">
+                <ul class="menu-category my-ul">
+                  <li>
+                    <a href="#">Вышки-туры стальные
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Вышки-туры алюминиевые
+                    </a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="btn-dropdown" data-toggle="dropdown">Леса строительные
+                      <span class="dropdown-toggle"><svg class="svg-icon"><use
+                          xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+                    </a>
+                    <div class="dropdown-menu">
+                      <a href="#" class="dropdown-item">Пункт 1</a>
+                      <a href="#" class="dropdown-item">Пункт 2</a>
+                      <a href="#" class="dropdown-item">Пункт 3</a>
+                      <a href="#" class="dropdown-item">Пункт 4</a>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#">Люльки фасадные
+                    </a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="btn-dropdown" data-toggle="dropdown">Тепловые пушки
+                      <span class="dropdown-toggle"><svg class="svg-icon"><use
+                          xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+                    </a>
+                    <div class="dropdown-menu">
+                      <a href="#" class="dropdown-item">Пункт 1</a>
+                      <a href="#" class="dropdown-item">Пункт 2</a>
+                      <a href="#" class="dropdown-item">Пункт 3</a>
+                      <a href="#" class="dropdown-item">Пункт 4</a>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#">Лестницы универсальные</a>
+                  </li>
+                  <li>
+                    <a href="#">Стремянки алюминиевые/стальные</a>
+                  </li>
+                  <li>
+                    <a href="#">Подмости каменщика
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Сетки фасадные и пленки
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Еара для раствора
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Ограждения инвентарные
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Тележки гидравлические</a>
+                  </li>
+                  <li>
+                    <a href="#">Лебедки электрические</a>
+                  </li>
+                </ul>
+                <a href="#" class="btn btn-grey btn-collapse">
+                  <span class="btn-text">Свернуть</span>
+                  <span class="btn-icon"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-top"></use></svg></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <h1>Продукция</h1>
+          <div class="box-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+
+          <form method="post" class="form-search">
+            <label><input type="text" placeholder="Поиск">
+              <span class="input-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></span>
+            </label>
+            <button type="submit" class="btn btn-accent">
+              <span class="btn-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></span>
+              <span class="btn-text">Поиск</span>
+            </button>
+          </form>
+
+
+
+
+          <div class="products-section-wrapper">
+            <div class="products-box">
+              <div class="products-box__icon"><img src="img/products-icon1.svg" alt=""></div>
+              <div class="products-box__body">
+                <h3>Вышки-туры</h3>
+                <ul class="list-arrow my-ul products-box__menu">
+                  <li><a href="#">Вышка строительная МЕГА 1 (1,6х0,8)
+                  </a></li>
+                  <li><a href="#">Вышка строительная МЕГА 2 (2,0х1,0)
+                  </a></li>
+                  <li><a href="#">Вышка строительная МЕГА 3 (2,0х1,5)
+                  </a></li>
+                  <li><a href="#">Вышка строительная МЕГА 5 (1,6х1,5)
+                  </a></li>
+                  <li><a href="#">Вышка строительная МЕГА 1 PROFI (1.6x0.8)
+                  </a></li>
+                  <li><a href="#">Вышка строительная МЕГА 2 PROFI (2,0х1,0)
+                  </a></li>
+                  <li><a href="#">Вышки-туры Krause
+                  </a></li>
+                  <li><a href="#">Помост малярный МЕГА
+                  </a></li>
+                  <li><a href="#">Столик маляра МЕГА</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="products-box">
+              <div class="products-box__icon"><img src="img/products-icon2.svg" alt=""></div>
+              <div class="products-box__body">
+                <h3>Леса строительные</h3>
+                <ul class="list-arrow my-ul products-box__menu">
+                  <li><a href="#">Сетки фасадные и пленки
+                  </a></li>
+                  <li><a href="#">Леса строительные рамные до 20 метров
+                  </a></li>
+                  <li><a href="#">Леса строительные рамные до 30 метров
+                  </a></li>
+                  <li><a href="#">Леса строительные рамные до 40 метров
+                  </a></li>
+                  <li><a href="#">Леса строительные рамные до 60 метров
+                  </a></li>
+                  <li><a href="#">Леса строительные рамные до 80 метров
+                  </a></li>
+                  <li><a href="#">Леса строительные рамные до 100 метров
+                  </a></li>
+                  <li><a href="#">Леса строительные Вишнева
+                  </a></li>
+                  <li><a href="#">Леса строительные Хомутовые
+                  </a></li>
+                  <li><a href="#">Леса строительные Штыревые
+                  </a></li>
+                  <li><a href="#">Леса строительные клиновые</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="products-box">
+              <div class="products-box__icon"><img src="img/products-icon3.svg" alt=""></div>
+              <div class="products-box__body">
+                <h3>Виброплиты от производителя</h3>
+                <ul class="list-arrow my-ul products-box__menu">
+                  <li><a href="#">Виброплиты МЕГА</a></li>
+                  <li><a href="#">Виброплиты Wacker
+                  </a></li>
+                  <li><a href="#">Виброплиты Grost
+                  </a></li>
+                  <li><a href="#">Виброкатки Wacker</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="products-box">
+              <div class="products-box__icon"><img src="img/products-icon4.svg" alt=""></div>
+              <div class="products-box__body">
+                <h3>Тепловые пушки</h3>
+                <ul class="list-arrow my-ul products-box__menu">
+                  <li><a href="#">Электрические
+                  </a></li>
+                  <li><a href="#">Дизельные
+                  </a></li>
+                  <li><a href="#">Газовые
+                  </a></li>
+                  <li><a href="#">Конвекторы
+                  </a></li>
+                  <li><a href="#">Инфракрасные
+                  </a></li>
+                  <li><a href="#">Тепловые завесы</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="products-box">
+              <div class="products-box__icon"><img src="img/products-icon5.svg" alt=""></div>
+              <div class="products-box__body">
+                <h3>Другие категории</h3>
+                <ul class="list-arrow my-ul products-box__menu">
+                  <li><a href="#">Бензиновые генераторы
+                  </a></li>
+                  <li><a href="#">Бетоносмесители
+                  </a></li>
+                  <li><a href="#">Сетки фасадные и пленки
+                  </a></li>
+                  <li><a href="#">Тара для подачи раствора и бетона
+                  </a></li>
+                  <li><a href="#">Виброкатки
+                  </a></li>
+                  <li><a href="#">Виброрейки
+                  </a></li>
+                  <li><a href="#">Вибротрамбовки
+                  </a></li>
+                  <li><a href="#">Глубинные вибраторы
+                  </a></li>
+                  <li><a href="#">Затирочные машины по бетону
+                  </a></li>
+                  <li><a href="#">Компрессоры
+                  </a></li>
+                  <li><a href="#">Люльки фасадные
+                  </a></li>
+                  <li><a href="#">Мини-погрузчики
+                  </a></li>
+                  <li><a href="#">Мотопомпы
+                  </a></li>
+                  <li><a href="#">Ограждение
+                  </a></li>
+                  <li><a href="#">Ограждения перекрытий
+                  </a></li>
+                  <li><a href="#">Растворосмесители
+                  </a></li>
+                  <li><a href="#">Складское оборудование
+                  </a></li>
+                  <li><a href="#">Строительные мусороспуски
+                  </a></li>
+                  <li><a href="#">Тачки садовые и строительные
+                  </a></li>
+                  <li><a href="#">Тележки гидравлические рохли
+                  </a></li>
+                  <li><a href="#">Тележки для топпинга
+                  </a></li>
+                  <li><a href="#">Фрезеровальные машины
+                  </a></li>
+                  <li><a href="#">Шовнарезчики</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="products-box">
+              <div class="products-box__icon"><img src="img/products-icon6.svg" alt=""></div>
+              <div class="products-box__body">
+                <h3>Лестницы универсальные и стремянки алюминиевые/стальные</h3>
+                <ul class="list-arrow my-ul products-box__menu">
+                  <li><a href="#">Лестницы STAIRS
+                  </a></li>
+                  <li><a href="#">Лестницы-трансформеры
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--### SECTION END ###-->
+
+<!--### SECTION seo-section ###-->
+<section class="seo-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Heading</h2>
+        <div class="box-text">
+          <p>Oratio accumsan et mea. Per cu iracundia splendide. Eu cum iuvaret debitis voluptatibus, esse perfecto
+            reformidans id has. Per cu iracundia splendide. Tation delenit percipitur at vix. Lorem ipsum dolor sit
+            amet, an eos lorem ancillae expetenda, vim et utamur quaestio.</p>
+
+          <ul class="list-dots my-ul">
+            <li>An eos iusto solet, id mel dico habemus. Ius dicat feugiat no, vix cu modo dicat principes.</li>
+            <li>Odio contentiones sed cu, usu commodo prompta prodesset id.</li>
+            <li>Per cu iracundia splendide. Ius dicat feugiat no, vix cu modo dicat principes.</li>
+          </ul>
+
+          <p>Postulant assueverit ea his. Eu eam dolores lobortis percipitur, quo te equidem deleniti disputando. An nam
+            debet instructior, commodo mediocrem id cum. Oratio accumsan et mea. Nec labore cetero theophrastus no, ei
+            vero facer veritus nec. Odio contentiones sed cu, usu commodo prompta prodesset id.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--### SECTION seo-section END ###-->
+
+<!--### SECTION news ###-->
+<section class="news">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Новости</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 mb-40">
+        <div class="news-card">
+          <div class="news-card__img"></div>
+          <div class="news-card__body">
+            <h4>Название новости</h4>
+            <div class="news-card__line">
+              <p>Тема новости</p>
+              <p>04.02.2021</p>
+            </div>
+            <div class="box-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+            </div>
+
+            <a href="#" class="links">
+              <span class="links-text">читать</span>
+              <span class="links-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-40">
+        <div class="news-card">
+          <div class="news-card__img"></div>
+          <div class="news-card__body">
+            <h4>Название новости в несколько строк и еще текст</h4>
+            <div class="news-card__line">
+              <p>Тема новости</p>
+              <p>04.02.2021</p>
+            </div>
+            <div class="box-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua
+                Lorem ipsum dolor sit amet, consectetur </p>
+            </div>
+
+            <a href="#" class="links">
+              <span class="links-text">читать</span>
+              <span class="links-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-40">
+        <div class="news-card">
+          <div class="news-card__img"></div>
+          <div class="news-card__body">
+            <h4>Название новости в несколько строк и еще текст</h4>
+            <div class="news-card__line">
+              <p>Тема новости</p>
+              <p>04.02.2021</p>
+            </div>
+            <div class="box-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua
+                Lorem ipsum dolor sit amet, consectetur </p>
+            </div>
+
+            <a href="#" class="links">
+              <span class="links-text">читать</span>
+              <span class="links-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <a href="#" class="btn btn-accent btn-toggle">
+          <span class="btn-text">Еще новости</span>
+          <span class="btn-arrow-bottom"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--### SECTION news END ###-->
+
+
+<!--### SECTION callback  ###-->
+<section class="callback">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="callback-wrapper bg-blue color-white">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2>Есть вопросы?</h2>
+            </div>
+
+            <div class="col-12">
+              <form method="post" class="form">
+                <div class="row">
+                  <div class="col-12 offset-lg-2 col-lg-3">
+                    <label><input type="text" name="name" placeholder="Имя"></label>
+                  </div>
+                  <div class="col-12 col-lg-3">
+                    <label><input type="text" name="phone" placeholder="Телефон"></label>
+                  </div>
+                  <div class="col-12 col-lg-2">
+                    <button type="submit" class="btn btn-white">Отправить</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--### SECTION callback END ###-->
+
+
+<!--### FOOTER  ###-->
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-3 col-sm-5">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+
+        </div>
+
+        <div class="col-12 col-lg-4 col-sm-7">
+          <ul class="footer-menu my-ul column-2">
+            <li><a href="catalog.html">Продукция</a></li>
+            <li><a href="#">Аренда</a></li>
+            <li><a href="#">Наше производство</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Гарантия</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-lg-5">
+          <div class="row">
+            <div class="col-6 col-lg-5">
+              <div class="header-box">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
+                <h4>Отдел продаж:</h4>
+                <a href="tel:+78127110747" class="phone">+7 (812) 711-07-47</a>
+                <a href="tel:+78129247373" class="phone">+7 (812) 924-73-73</a>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg-7">
+              <div class="header-box">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
+                <h4>Отдел аренды:</h4>
+                <a href="tel:+78127110747" class="phone">+7 (812) 711-07-47</a>
+                <a href="tel:+78129247373" class="phone">+7 (812) 924-73-73</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 col-lg-7">
+          <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-5">
+          <div class="header-box">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#location"></use>
+            </svg>
+            <div class="address"><strong>г. Санкт-Петербург,</strong> ул. Гертьева, д. 14, лит. А, офис 100</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <a href="#" target="_blank" class="links text-decoration color-grey">Политика конфиденциальности и иконки со
+            способами оплаты</a>
+        </div>
+        <div class="col-12 col-md-6">
+          <a href="#" target="_blank" class="links text-decoration color-grey links-developer">Продвижение сайта:
+            Ant-team.ru , info@ant-team.ru.ru</a>
+        </div>
+        <div class="col-12">
+          <div class="copyright">
+            <p>Все цены и материалы, указанные на сайте лесамега.рф, приведены как справочная информация и не являются
+              публичной офертой, определяемой положениями ст. 437 ГК РФ. Они могут быть изменены в любое время без
+              предупреждения. Для получения подробной информации о стоимости, сроках и условиях поставки просьба
+              обращаться по телефону: +7 (812) 711-07-47</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--### FOOTER END ###-->
+
+<a href="#" class="btn-top-scroll">
+  <svg class="svg-icon">
+    <use xlink:href="img/sprite.svg#arrow-top"></use>
+  </svg>
+</a>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Оставьте заявку</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form">
+          <label><input type="text" name="name" placeholder="Имя фамилия"></label>
+          <label><input type="text" name="phone" placeholder="Email" required></label>
+          <label><input type="text" name="phone" placeholder="Телефон" required></label>
+          <button type="submit" class="btn btn-accent">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Спасибо</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="box-text">
+          <p>мы свяжемся с вами в ближайшее время</p>
+        </div>
+        <a href="#" class="btn btn-accent">Закрыть</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/home.js"></script>
+
+</body>
+</html>

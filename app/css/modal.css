@@ -1,2 +1,73 @@
 /*==========  modal  ==========*/
+.modal-backdrop {
+  background: rgba(31, 35, 45, 0.63); }
+
+.modal-backdrop.show {
+  opacity: 1; }
+
+.modal-dialog {
+  max-width: 577px; }
+
+.modal-content {
+  border: none;
+    border-radius: 10px;
+  background: #fff;
+  min-height: 273px; }
+  .modal-content .form {
+    margin: 0 auto;
+    max-width: 380px; }
+    .modal-content .form label {
+      margin: 0 0 15px; }
+    .modal-content .form input {
+      border: 1px solid #E0E0E0; }
+    .modal-content .form button {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      margin: 30px auto 0; }
+  .modal-content .box-text {
+    margin: 0 auto 34px;
+    text-align: center; }
+  .modal-content .btn {
+    margin: 0 auto; }
+
+.modal-content {
+  padding: 48px 20px; }
+
+.modal-header {
+  padding: 0;
+  border: none;
+  width: 100%; }
+  .modal-header .close {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    right: -46px;
+    fill: #fff;
+    width: 21px;
+    height: 23px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    opacity: 1; }
+
+.modal-title {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 29px;
+  color: #000000;
+  font-size: 30px;
+  font-weight: 900; }
+
+.modal-body {
+  padding: 0;
+  width: 100%; }
+
 /*==========  modal end  ==========*/

@@ -167,9 +167,21 @@
           <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a>
           <div class="schedule">Пн-Пт: 9.00 - 18.00</div>
         </div>
+
+        <a href="#" class="btn-search d-flex d-lg-none">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+        </a>
+
+        <div class="btn-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
 
-      <div class="col-12 d-flex align-items-center mt-24">
+      <div class="col-12 d-lg-flex align-items-center mt-24 d-none">
         <ul class="menu my-ul">
           <li><a href="catalog.html">Продукция</a></li>
           <li><a href="#">Аренда</a></li>
@@ -229,7 +241,7 @@
 <section class="home">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-3">
+      <div class="col-12 col-lg-3 d-none d-lg-block">
         <div class="sidebar">
           <ul class="nav nav-menu-tab" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
@@ -389,12 +401,189 @@
 
       <div class="col-12 col-lg-9">
         <div class="content">
+          <form method="post" class="form-search">
+            <label><input type="text" placeholder="Поиск">
+              <span class="input-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></span>
+            </label>
+            <button type="submit" class="btn btn-accent">
+              <span class="btn-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></span>
+              <span class="btn-text">Поиск</span>
+            </button>
+          </form>
+
           <div class="banner">
             <div class="banner-img"><img src="img/img1.jpeg" alt=""></div>
             <div class="banner-content">
               <h4>Вышки-туры</h4>
               <div class="box-text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-block d-lg-none">
+            <div class="menu-category-wrapper">
+              <div class="menu-category__nav">
+                <a href="#" class="menu-category__links active" data-tab="menu-category1">
+                  <span>Продажа</span>
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                  </svg>
+                </a>
+                <a href="#" class="menu-category__links" data-tab="menu-category2">
+                  <span>Аренда</span>
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="menu-category__info active" data-tab="menu-category1">
+                <ul class="menu-category my-ul">
+                  <li>
+                    <a href="#">Вышки-туры стальные
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Вышки-туры алюминиевые
+                    </a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="btn-dropdown" data-toggle="dropdown">Леса строительные
+                      <span class="dropdown-toggle"><svg class="svg-icon"><use
+                          xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+                    </a>
+                    <div class="dropdown-menu">
+                      <a href="#" class="dropdown-item">Пункт 1</a>
+                      <a href="#" class="dropdown-item">Пункт 2</a>
+                      <a href="#" class="dropdown-item">Пункт 3</a>
+                      <a href="#" class="dropdown-item">Пункт 4</a>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#">Люльки фасадные
+                    </a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="btn-dropdown" data-toggle="dropdown">Тепловые пушки
+                      <span class="dropdown-toggle"><svg class="svg-icon"><use
+                          xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+                    </a>
+                    <div class="dropdown-menu">
+                      <a href="#" class="dropdown-item">Пункт 1</a>
+                      <a href="#" class="dropdown-item">Пункт 2</a>
+                      <a href="#" class="dropdown-item">Пункт 3</a>
+                      <a href="#" class="dropdown-item">Пункт 4</a>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#">Лестницы универсальные</a>
+                  </li>
+                  <li>
+                    <a href="#">Стремянки алюминиевые/стальные</a>
+                  </li>
+                  <li>
+                    <a href="#">Подмости каменщика
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Сетки фасадные и пленки
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Еара для раствора
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Ограждения инвентарные
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Тележки гидравлические</a>
+                  </li>
+                  <li>
+                    <a href="#">Лебедки электрические</a>
+                  </li>
+                </ul>
+                <a href="#" class="btn btn-grey btn-collapse">
+                  <span class="btn-text">Свернуть</span>
+                  <span class="btn-icon"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-top"></use></svg></span>
+                </a>
+              </div>
+
+              <div class="menu-category__info" data-tab="menu-category2">
+                <ul class="menu-category my-ul">
+                  <li>
+                    <a href="#">Вышки-туры стальные
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Вышки-туры алюминиевые
+                    </a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="btn-dropdown" data-toggle="dropdown">Леса строительные
+                      <span class="dropdown-toggle"><svg class="svg-icon"><use
+                          xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+                    </a>
+                    <div class="dropdown-menu">
+                      <a href="#" class="dropdown-item">Пункт 1</a>
+                      <a href="#" class="dropdown-item">Пункт 2</a>
+                      <a href="#" class="dropdown-item">Пункт 3</a>
+                      <a href="#" class="dropdown-item">Пункт 4</a>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#">Люльки фасадные
+                    </a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="btn-dropdown" data-toggle="dropdown">Тепловые пушки
+                      <span class="dropdown-toggle"><svg class="svg-icon"><use
+                          xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+                    </a>
+                    <div class="dropdown-menu">
+                      <a href="#" class="dropdown-item">Пункт 1</a>
+                      <a href="#" class="dropdown-item">Пункт 2</a>
+                      <a href="#" class="dropdown-item">Пункт 3</a>
+                      <a href="#" class="dropdown-item">Пункт 4</a>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#">Лестницы универсальные</a>
+                  </li>
+                  <li>
+                    <a href="#">Стремянки алюминиевые/стальные</a>
+                  </li>
+                  <li>
+                    <a href="#">Подмости каменщика
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Сетки фасадные и пленки
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Еара для раствора
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Ограждения инвентарные
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Тележки гидравлические</a>
+                  </li>
+                  <li>
+                    <a href="#">Лебедки электрические</a>
+                  </li>
+                </ul>
+                <a href="#" class="btn btn-grey btn-collapse">
+                  <span class="btn-text">Свернуть</span>
+                  <span class="btn-icon"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-top"></use></svg></span>
+                </a>
               </div>
             </div>
           </div>
@@ -406,8 +595,8 @@
                 работ.</p>
             </div>
 
-            <div class="row">
-              <div class="col-12 col-md-6 col-lg-4 mb-28">
+            <div class="row popular-products-slider">
+              <div class="col-12 col-sm-6 col-lg-4 mb-28">
                 <div class="popular-category-box">
                   <a href="product.html" class="popular-category-box__img"><img src="img/product1.jpeg" alt=""></a>
                   <div class="popular-category-box__body">
@@ -423,7 +612,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-md-6 col-lg-4 mb-28">
+              <div class="col-12 col-sm-6 col-lg-4 mb-28">
                 <div class="popular-category-box">
                   <a href="product.html" class="popular-category-box__img"><img src="img/product2.png" alt=""></a>
                   <div class="popular-category-box__body">
@@ -439,7 +628,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-md-6 col-lg-4 mb-28">
+              <div class="col-12 col-sm-6 col-lg-4 mb-28">
                 <div class="popular-category-box">
                   <a href="product.html" class="popular-category-box__img"><img src="img/product3.jpeg" alt=""></a>
                   <div class="popular-category-box__body">
@@ -467,8 +656,8 @@
               <p>Это оборудование наиболее часто покупают и арендуют наши клиенты.</p>
             </div>
 
-            <div class="row">
-              <div class="col-12 col-md-6 col-lg-4 mb-15">
+            <div class="row popular-products-slider">
+              <div class="col-12 col-sm-6 col-lg-4 mb-15">
                 <div class="popular-products-box">
                   <a href="product.html" class="popular-products-box__img"><img src="img/product4.png" alt=""></a>
                   <div class="popular-products-box__body">
@@ -482,7 +671,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-4 mb-15">
+              <div class="col-12 col-sm-6 col-lg-4 mb-15">
                 <div class="popular-products-box">
                   <a href="product.html" class="popular-products-box__img"><img src="img/product4.png" alt=""></a>
                   <div class="popular-products-box__body">
@@ -496,7 +685,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-4 mb-15">
+              <div class="col-12 col-sm-6 col-lg-4 mb-15">
                 <div class="popular-products-box">
                   <a href="product.html" class="popular-products-box__img"><img src="img/product3.jpeg" alt=""></a>
                   <div class="popular-products-box__body">
@@ -508,7 +697,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-4 mb-15">
+              <div class="col-12 col-sm-6 col-lg-4 mb-15">
                 <div class="popular-products-box">
                   <a href="product.html" class="popular-products-box__img"><img src="img/product5.png" alt=""></a>
                   <div class="popular-products-box__body">
@@ -522,7 +711,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-4 mb-15">
+              <div class="col-12 col-sm-6 col-lg-4 mb-15">
                 <div class="popular-products-box">
                   <a href="product.html" class="popular-products-box__img"><img src="img/product6.jpeg" alt=""></a>
                   <div class="popular-products-box__body">
@@ -535,7 +724,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-4 mb-15">
+              <div class="col-12 col-sm-6 col-lg-4 mb-15">
                 <div class="popular-products-box">
                   <a href="product.html" class="popular-products-box__img"><img src="img/product4.png" alt=""></a>
                   <div class="popular-products-box__body">
@@ -604,28 +793,46 @@
       <div class="col-12">
         <div class="materials-slider">
           <div class="slide">
-            <div class="materials-box"><img src="img/google.png" alt=""></div>
+            <div class="materials-box__wrap">
+              <div class="materials-box"><img src="img/google.png" alt=""></div>
+              <div class="materials-box"><img src="img/coca-cola.png" alt=""></div>
+            </div>
           </div>
           <div class="slide">
-            <div class="materials-box"><img src="img/coca-cola.png" alt=""></div>
+            <div class="materials-box__wrap">
+              <div class="materials-box"><img src="img/coca-cola.png" alt=""></div>
+              <div class="materials-box"><img src="img/google.png" alt=""></div>
+            </div>
           </div>
           <div class="slide">
-            <div class="materials-box"><img src="img/google.png" alt=""></div>
+            <div class="materials-box__wrap">
+              <div class="materials-box"><img src="img/google.png" alt=""></div>
+              <div class="materials-box"><img src="img/coca-cola.png" alt=""></div>
+            </div>
           </div>
           <div class="slide">
-            <div class="materials-box"><img src="img/coca-cola.png" alt=""></div>
+            <div class="materials-box__wrap">
+              <div class="materials-box"><img src="img/coca-cola.png" alt=""></div>
+              <div class="materials-box"><img src="img/google.png" alt=""></div>
+            </div>
           </div>
           <div class="slide">
-            <div class="materials-box"><img src="img/google.png" alt=""></div>
+            <div class="materials-box__wrap">
+              <div class="materials-box"><img src="img/google.png" alt=""></div>
+              <div class="materials-box"><img src="img/coca-cola.png" alt=""></div>
+            </div>
           </div>
           <div class="slide">
-            <div class="materials-box"><img src="img/coca-cola.png" alt=""></div>
+            <div class="materials-box__wrap">
+              <div class="materials-box"><img src="img/coca-cola.png" alt=""></div>
+              <div class="materials-box"><img src="img/google.png" alt=""></div>
+            </div>
           </div>
           <div class="slide">
-            <div class="materials-box"><img src="img/google.png" alt=""></div>
-          </div>
-          <div class="slide">
-            <div class="materials-box"><img src="img/coca-cola.png" alt=""></div>
+            <div class="materials-box__wrap">
+              <div class="materials-box"><img src="img/google.png" alt=""></div>
+              <div class="materials-box"><img src="img/coca-cola.png" alt=""></div>
+            </div>
           </div>
         </div>
       </div>
@@ -970,18 +1177,18 @@
 <section class="reviews">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <h2>Отзывы</h2>
-      </div>
-      <div class="col-12 col-md-5">
 
-        <div class="box-text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua</p>
+      <div class="col-12 col-lg-5">
+        <div class="reviews-content">
+          <h2>Отзывы</h2>
+          <div class="box-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua</p>
+          </div>
         </div>
       </div>
 
-      <div class="col-12 col-lg-4 col-md-4 offset-lg-1">
+      <div class="col-12 col-lg-4 offset-lg-1">
         <div class="rating-box">
           <div class="rating-box-wrapper">
             <p>Средний рейтинг</p>
@@ -1017,7 +1224,7 @@
         </div>
       </div>
 
-      <div class="col-lg-2 col-md-3 d-none d-md-block">
+      <div class="col-lg-2 col-lg-3 d-none d-lg-block">
         <div class="slider-nav reviews-slider__nav"></div>
       </div>
     </div>
@@ -1028,37 +1235,39 @@
           <div class="slide">
             <div class="reviews-slider-box">
               <div class="reviews-slider-box__head">
-                <div class="reviews-slider-box__name">
-                  <h4>Имя фамилия</h4>
-                  <p>Название продукции</p>
+                <div class="reviews-slider-box__wrap">
+                  <div class="reviews-slider-box__name">
+                    <h4>Имя фамилия</h4>
+                    <p>Название продукции</p>
+                  </div>
+                  <ul class="list-star my-ul">
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li class="star0">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star0"></use>
+                      </svg>
+                    </li>
+                  </ul>
                 </div>
-                <ul class="list-star my-ul">
-                  <li>
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#star"></use>
-                    </svg>
-                  </li>
-                  <li>
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#star"></use>
-                    </svg>
-                  </li>
-                  <li>
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#star"></use>
-                    </svg>
-                  </li>
-                  <li>
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#star"></use>
-                    </svg>
-                  </li>
-                  <li class="star0">
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#star0"></use>
-                    </svg>
-                  </li>
-                </ul>
               </div>
               <div class="reviews-slider-box__body">
                 <div class="box-text">
@@ -1073,37 +1282,39 @@
             <div class="reviews-slider-box">
               <div class="reviews-slider-box__head">
                 <div class="reviews-slider-box__avatar"><img src="img/photo.png" alt=""></div>
-                <div class="reviews-slider-box__name">
-                  <h4>Имя фамилия</h4>
-                  <p>Название продукции</p>
+                <div class="reviews-slider-box__wrap">
+                  <div class="reviews-slider-box__name">
+                    <h4>Имя фамилия</h4>
+                    <p>Название продукции</p>
+                  </div>
+                  <ul class="list-star my-ul">
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                  </ul>
                 </div>
-                <ul class="list-star my-ul">
-                  <li>
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#star"></use>
-                    </svg>
-                  </li>
-                  <li>
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#star"></use>
-                    </svg>
-                  </li>
-                  <li>
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#star"></use>
-                    </svg>
-                  </li>
-                  <li>
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#star"></use>
-                    </svg>
-                  </li>
-                  <li>
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#star"></use>
-                    </svg>
-                  </li>
-                </ul>
               </div>
               <div class="reviews-slider-box__body">
                 <div class="box-text">
@@ -1120,37 +1331,39 @@
           <div class="slide">
             <div class="reviews-slider-box">
               <div class="reviews-slider-box__head">
-                <div class="reviews-slider-box__name">
-                  <h4>Имя фамилия</h4>
-                  <p>Название продукции</p>
+                <div class="reviews-slider-box__wrap">
+                  <div class="reviews-slider-box__name">
+                    <h4>Имя фамилия</h4>
+                    <p>Название продукции</p>
+                  </div>
+                  <ul class="list-star my-ul">
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li class="star0">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star0"></use>
+                      </svg>
+                    </li>
+                  </ul>
                 </div>
-                <ul class="list-star my-ul">
-                  <li>
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#star"></use>
-                    </svg>
-                  </li>
-                  <li>
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#star"></use>
-                    </svg>
-                  </li>
-                  <li>
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#star"></use>
-                    </svg>
-                  </li>
-                  <li>
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#star"></use>
-                    </svg>
-                  </li>
-                  <li class="star0">
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#star0"></use>
-                    </svg>
-                  </li>
-                </ul>
               </div>
               <div class="reviews-slider-box__body">
                 <div class="box-text">
@@ -1165,37 +1378,40 @@
             <div class="reviews-slider-box">
               <div class="reviews-slider-box__head">
                 <div class="reviews-slider-box__avatar"><img src="img/photo.png" alt=""></div>
-                <div class="reviews-slider-box__name">
-                  <h4>Имя фамилия</h4>
-                  <p>Название продукции</p>
+                <div class="reviews-slider-box__wrap">
+                  <div class="reviews-slider-box__name">
+
+                    <h4>Имя фамилия</h4>
+                    <p>Название продукции</p>
+                  </div>
+                  <ul class="list-star my-ul">
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                  </ul>
                 </div>
-                <ul class="list-star my-ul">
-                  <li>
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#star"></use>
-                    </svg>
-                  </li>
-                  <li>
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#star"></use>
-                    </svg>
-                  </li>
-                  <li>
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#star"></use>
-                    </svg>
-                  </li>
-                  <li>
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#star"></use>
-                    </svg>
-                  </li>
-                  <li>
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#star"></use>
-                    </svg>
-                  </li>
-                </ul>
               </div>
               <div class="reviews-slider-box__body">
                 <div class="box-text">
@@ -1208,8 +1424,6 @@
           </div>
         </div>
       </div>
-
-
     </div>
   </div>
 </section>
@@ -1232,6 +1446,50 @@
                   <input type="text" name="name_product" placeholder="Название продукции">
                 </label>
 
+                <div class="rating-box-wrapper d-none d-lg-flex">
+                  <p>Рейтинг</p>
+                  <ul class="list-star my-ul">
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </li>
+                    <li class="star0">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#star0"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+                <label class="checkbox d-none d-lg-flex">
+                  <input type="checkbox" name="checkbox" class="inp-check" checked>
+                  <span class="checkbox-custom"></span>
+                  <span class="checkbox-text">Я согласен с политикой обработки персональных данных</span>
+                </label>
+              </div>
+
+              <div class="col-12 col-lg-6">
+                <label>
+                  <textarea name="comment" placeholder="Отзыв"></textarea>
+                </label>
+              </div>
+
+              <div class="col-12 d-block d-lg-none">
                 <div class="rating-box-wrapper">
                   <p>Рейтинг</p>
                   <ul class="list-star my-ul">
@@ -1268,12 +1526,6 @@
                   <span class="checkbox-text">Я согласен с политикой обработки персональных данных</span>
                 </label>
               </div>
-
-              <div class="col-12 col-lg-6">
-                <label>
-                  <textarea name="comment" placeholder="Отзыв"></textarea>
-                </label>
-              </div>
             </div>
           </form>
         </div>
@@ -1301,7 +1553,7 @@
     </div>
 
     <div class="row">
-      <div class="col-12 col-md-6 col-lg-4">
+      <div class="col-12 col-sm-6 col-lg-4">
         <div class="staff-box">
           <div class="staff-box__content">
             <h3>Александр</h3>
@@ -1313,7 +1565,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-4">
+      <div class="col-12 col-sm-6 col-lg-4">
         <div class="staff-box">
           <div class="staff-box__content">
             <h3>Станислав</h3>
@@ -1325,7 +1577,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-4">
+      <div class="col-12 col-sm-6 col-lg-4">
         <div class="staff-box">
           <div class="staff-box__content">
             <h3>Артем</h3>
@@ -1391,13 +1643,13 @@
   <div class="footer-top">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-3">
+        <div class="col-12 col-lg-3 col-sm-5">
           <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
 
 
         </div>
 
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-4 col-sm-7">
           <ul class="footer-menu my-ul column-2">
             <li><a href="catalog.html">Продукция</a></li>
             <li><a href="#">Аренда</a></li>
@@ -1410,7 +1662,7 @@
 
         <div class="col-12 col-lg-5">
           <div class="row">
-            <div class="col-12 col-lg-5">
+            <div class="col-6 col-lg-5">
               <div class="header-box">
                 <svg class="svg-icon">
                   <use xlink:href="img/sprite.svg#phone"></use>
@@ -1421,7 +1673,7 @@
               </div>
             </div>
 
-            <div class="col-12 col-lg-7">
+            <div class="col-6 col-lg-7">
               <div class="header-box">
                 <svg class="svg-icon">
                   <use xlink:href="img/sprite.svg#phone"></use>
@@ -1436,10 +1688,10 @@
 
       </div>
       <div class="row align-items-center">
-        <div class="col-12 col-lg-7">
+        <div class="col-12 col-md-6 col-lg-7">
           <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a>
         </div>
-        <div class="col-12 col-lg-5">
+        <div class="col-12 col-md-6 col-lg-5">
           <div class="header-box">
             <svg class="svg-icon">
               <use xlink:href="img/sprite.svg#location"></use>
@@ -1481,6 +1733,52 @@
     <use xlink:href="img/sprite.svg#arrow-top"></use>
   </svg>
 </a>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Оставьте заявку</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form">
+          <label><input type="text" name="name" placeholder="Имя фамилия"></label>
+          <label><input type="text" name="phone" placeholder="Email" required></label>
+          <label><input type="text" name="phone" placeholder="Телефон" required></label>
+          <button type="submit" class="btn btn-accent">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Спасибо</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+<div class="box-text">
+  <p>мы свяжемся с вами в ближайшее время</p>
+</div>
+        <a href="#" class="btn btn-accent">Закрыть</a>
+
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <script src="js/jquery.min.js"></script>

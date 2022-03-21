@@ -2,9 +2,9 @@
 
 /*==========  header  ==========*/
 header
-  padding: 16px 0 25px
+  padding: 16px 0 19px
   position: relative
-  margin: 0 0 38px
+  margin: 0 0 15px
   &:before
     content: ''
     position: absolute
@@ -12,7 +12,8 @@ header
     bottom: 0
     transform: translateX(-50%)
     background: #E0E0E0
-    width: 100%
+    width: calc(100% - 20px)
+    height: 1px
     padding: 0 10px
     max-width: 1180px
 
@@ -268,5 +269,16 @@ header
   width: 21px
   height: 21px
 
-
+.btn-burger
+  width: 26px
+  display: none
+  span
+    background: $accent
+    width: 100%
+    display: block
+    height: 2px
+    border-radius: 3px
+    margin: 0 0 6px
+    &:last-child
+      margin: 0
 /*==========  mobile-menu end  ==========*/

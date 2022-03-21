@@ -1,4 +1,7 @@
 /*==========  section  ==========*/
+.home {
+  margin: 38px 0 0; }
+
 .nav-menu-tab {
   width: 100%; }
   .nav-menu-tab .nav-item {
@@ -79,6 +82,44 @@
 .sidebar {
   width: 100%;
   margin: 0 0 29px; }
+
+.form-search {
+  display: none;
+  width: 100%;
+  position: relative;
+  margin: 0 0 15px; }
+  .form-search input {
+    border: 1px solid #E0E0E0;
+      border-radius: 30px;
+    padding: 0 180px 0 46px; }
+  .form-search button {
+    position: absolute;
+    right: 0;
+    top: 0; }
+    .form-search button .svg-icon {
+      margin: 0 10px 0 0;
+      fill: #fff;
+      width: 14px;
+      height: 14px; }
+
+.input-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 27px;
+  width: 13px;
+  height: 13px;
+  fill: #898989;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%); }
 
 /*==========  section end  ==========*/
 /*==========  section  ==========*/
@@ -303,6 +344,74 @@
     -webkit-filter: grayscale(100%);
             filter: grayscale(100%); }
 
+.materials-box__wrap .materials-box:last-child {
+  display: none; }
+
+.menu-category-wrapper {
+  width: 100%;
+  margin: 23px 0 0; }
+
+.menu-category__nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  position: relative;
+  z-index: 1; }
+
+.menu-category__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 36px;
+  color: #fff;
+  background: #B5B5B5;
+  font-size: 16px;
+  font-weight: 900;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+  .menu-category__links:first-child {
+    border-radius: 3px 0 0 3px; }
+  .menu-category__links:last-child {
+    border-radius: 0 3px 3px 0; }
+  .menu-category__links .svg-icon {
+    width: 10px;
+    height: 5px;
+    fill: none;
+    stroke: #ffffff;
+    margin: 0 0 0 10px; }
+  .menu-category__links.active {
+    background: #339EC9;
+    color: #fff; }
+
+.menu-category__info {
+  display: none;
+  width: 100%;
+  padding: 11px 31px 49px;
+  border: 1px solid #E0E0E0;
+    border-radius: 3px;
+  background: #fff;
+  margin: -2px 0 0;
+  position: relative; }
+  .menu-category__info.active {
+    display: block; }
+
+.btn-collapse {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute; }
+
 /*==========  section materials end  ==========*/
 /*==========  section advantages ==========*/
 .advantages {
@@ -432,6 +541,8 @@
       border-bottom: 1px solid #EBEBEB; }
     .accordion .card:last-child {
       border-bottom: none; }
+    .accordion .card .card-header {
+      margin-bottom: 0; }
   .accordion .card-header {
     padding: 20px 23px 20px 0;
     background: transparent;
@@ -471,7 +582,9 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 26px;
+  min-width: 26px;
   height: 26px;
+  margin: 0 12px 0 0;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   fill: #BDBDBD; }
@@ -497,13 +610,14 @@
     color: #fff; }
   .reviews .box-text {
     max-width: 382px;
-    color: #fff;
-    margin: 0 0 36px; }
+    color: #fff; }
   .reviews .list-star .svg-icon {
     fill: #FFC107; }
   .reviews .list-star .star0 .svg-icon {
     fill: none;
     stroke: #FFC107; }
+  .reviews .rating-box {
+    margin: 50px 0 0; }
 
 .vote {
   margin: 3px 0 0;
@@ -524,11 +638,14 @@
   .rating-box-wrapper p {
     margin: 0 15px 0 0; }
 
-.reviews-slider .slick-list {
-  margin: 0 -10px; }
-
-.reviews-slider .slick-slide {
-  padding: 0 10px; }
+.reviews-slider {
+  margin: 36px 0 0; }
+  .reviews-slider .slick-list {
+    margin: 0 -10px; }
+  .reviews-slider .slick-slide {
+    padding: 0 10px; }
+  .reviews-slider__nav {
+    margin: 50px 0 0; }
 
 .reviews-slider-box {
   width: 100%;
@@ -580,6 +697,18 @@
     color: #414141;
     max-width: none;
     margin: 0; }
+
+.reviews-slider-box__wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .add-reviews {
   margin: 57px 0 0; }
