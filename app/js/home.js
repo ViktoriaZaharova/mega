@@ -1,15 +1,5 @@
 // slick active
 $(window).on('load resize', function() {
-
-    if ($(window).width() > 992) {
-        $('.reviews-slider:not(.slick-initialized)').slick({
-            slidesToShow: 2,
-            arrows: true,
-            appendArrows: '.reviews-slider__nav',
-            prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
-            nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
-        });
-    }
     if ($(window).width() < 576) {
         $('.popular-products-slider:not(.slick-initialized)').slick({
             slidesToShow: 1,
@@ -20,8 +10,23 @@ $(window).on('load resize', function() {
         });
     }
     else {
-        $(".reviews-slider.slick-initialized").slick("unslick");
         $(".popular-products-slider.slick-initialized").slick("unslick");
+    }
+});
+
+$(window).on('load resize', function() {
+    if ($(window).width() > 992) {
+        $('.reviews-slider:not(.slick-initialized)').slick({
+            slidesToShow: 2,
+            arrows: true,
+            appendArrows: '.reviews-slider__nav',
+            prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+            nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+        });
+    }
+
+    else {
+        $(".reviews-slider.slick-initialized").slick("unslick");
     }
 });
 // slick active

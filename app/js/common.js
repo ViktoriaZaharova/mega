@@ -36,3 +36,5 @@ $('.btn-collapse').on('click', function (e) {
     e.preventDefault();
     $(this).parents('.menu-category__info').removeClass('active');
 });
+
+$('[data-toggle="tooltip"]').tooltip();

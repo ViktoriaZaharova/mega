@@ -1,0 +1,236 @@
+@import "vars"
+
+/*==========  product  ==========*/
+.product-gallery
+  margin: 0 0 8px
+  width: 100%
+  .slick-prev
+    left: 6px
+  .slick-next
+    right: 6px
+  .slick-arrow
+    width: 7px
+    height: 15px
+  &__item
+    border-radius: 3px
+    overflow: hidden
+    height: 239px
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    img
+      max-height: 100%
+
+.description-product
+  color: #414141
+  margin: 28px 0 48px
+  h4
+    font-weight: bold
+    color: #000000
+  ul, ol
+    margin: 0 0 35px
+  p
+    margin: 0 0 35px
+    &:last-child
+      margin: 0
+
+.description-product-img
+  width: 100%
+  background: #C4C4C4
+  height: 100%
+
+.description-product-image
+  height: 270px
+
+.description-product-video
+  width: 100%
+  position: relative
+  background: #C4C4C4
+  height: 504px
+
+.btn-play
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%,-50%)
+  width: 68px
+  height: 68px
+
+.table
+  width: 100%
+  font-size: 14px
+  margin: 30px 0 25px
+  td, th
+    vertical-align: middle
+    border: 1px solid #E0E0E0
+  td
+    text-align: center
+    &:first-child
+      text-align: left
+    &:nth-child(5)
+      font-size: 12px
+  span
+    color: #898989
+    font-size: 12px
+  thead
+    th
+      min-width: 83px
+      padding: 15px 12px
+      vertical-align: middle
+      background: #F1F1F1
+      font-size: 12px
+      font-weight: 900
+      text-align: center
+      border:
+        bottom: none
+      &:first-child
+        text-align: left
+        font-size: 16px
+        padding: 15px 40px 15px 30px
+        white-space: nowrap
+  .btn-basket
+    margin: 0 auto
+  strong
+    font-weight: bold
+  tbody
+    tr
+      &:hover
+        background: #F1F1F1
+  p
+    margin: 0
+  .list-characteristics
+    display: none
+    margin: 8px 0 0
+    font-size: 12px
+
+.btn-basket
+  width: 34px
+  height: 34px
+  fill: #fff
+  padding: 0
+  min-width: auto
+  .svg-icon
+    width: 16px
+    height: 13px
+
+.product-section
+  h1
+    margin: 0
+  .rating-box-wrapper
+    color: $accent
+    font-size: 14px
+    font-weight: 500
+  .list-star
+    li
+      fill: $accent
+      margin: 0 5px 0 0
+    .star0
+      stroke: $accent
+      fill: none
+  .availability
+    margin: 0 0 0 auto
+
+.product-document
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+
+.product-document-links
+  display: flex
+  align-items: center
+  color: #339EC9
+  font-size: 14px
+  font-weight: bold
+  &:hover
+    color: $orange
+  &__icon
+    margin: 0 7px 0 0
+    display: flex
+    align-items: center
+    justify-content: center
+
+.line-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 10px 0
+  .price
+    margin: 0 auto 0 0
+
+.list-characteristic
+  margin: 12px 0 25px
+  color: #414141
+  line-height: 30px
+
+.availability
+  color: #339EC9
+  font-size: 14px
+  font-weight: 500
+  display: flex
+  align-items: center
+  &-icon
+    display: flex
+    align-items: center
+    justify-content: center
+    fill: $accent
+    margin: 0 7px 0 0
+    width: 14px
+    height: 14px
+    min-width: 14px
+
+.btn-rent
+  margin: 0 0 0 16px
+
+.reviews-item
+  width: 100%
+  position: relative
+  padding: 34px 0 13px 85px
+  border-top: 1px solid #E0E0E0
+  .box-text
+    color: #414141
+    line-height: 25px
+  &__avatar
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    color: #339EC9
+    background: #F5F8F9
+    position: absolute
+    left: 0
+    top: 34px
+    width: 48px
+    height: 48px
+    font-size: 18px
+    font-weight: bold
+    text-transform: uppercase
+    &.bg-blue
+      background: #339EC9
+      color: #fff
+  &__head
+    width: 100%
+    display: flex
+    align-items: flex-start
+    margin: 0 0 15px
+  .article
+    font-size: 13px
+    margin: 3px 0 0
+    color: #898989
+  h4
+    font-weight: bold
+
+  .rating-box-wrapper
+    margin: 5px 0 0 auto
+
+.date-reviews
+  margin: 0 20px 0 0
+  color: #898989
+  font-size: 13px
+/*==========  product end ==========*/

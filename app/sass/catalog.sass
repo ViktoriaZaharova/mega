@@ -1,0 +1,305 @@
+@import "vars"
+
+/*==========  catalog  ==========*/
+.catalog-section
+  .form-search
+    display: flex
+    max-width: none
+    margin: 0 0 15px
+  .box-text
+    margin: 17px 0 26px
+  .description-product
+    margin: 60px 0 0
+
+.nav-catalog-tab
+  display: flex
+  align-items: flex-start
+  justify-content: flex-end
+  margin: 0 0 15px
+  li
+    margin: 0 19px 0 0
+    &:last-child
+      margin: 0
+    a
+      width: 18px
+      height: 18px
+      min-width: 18px
+      display: flex
+      align-items: center
+      justify-content: center
+      fill: #C4C4C4
+      padding: 0
+
+.tab-content-catalog
+  border: none
+    radius: 0
+  padding: 0
+  margin: 0
+
+.product-card
+  position: relative
+  width: 100%
+  height: 327px
+  background: #ffffff
+  border: 1px solid #E0E0E0
+    radius: 3px
+  &__img
+    height: 159px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      max-height: 100%
+  &__body
+    width: 100%
+    padding: 21px 22px 15px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    height: calc(100% - 159px)
+  &__name
+    color: #000000
+    font-size: 18px
+    font-weight: 900
+    &:hover
+      color: $accent
+  &__bottom
+    width: 100%
+    margin: auto 0 15px
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+  .list-star
+    li
+      width: 13px
+      height: 13px
+      margin: 0 1px 0 0
+      fill: $accent
+    .star0
+      fill: none
+      stroke: $accent
+  .links-grey
+    color: #898989
+    .svg-icon
+      fill: #898989
+
+
+
+.price-wrapper
+  display: flex
+  align-items: center
+  font-weight: bold
+  font-size: 12px
+  margin: 0 auto 0 0
+  .price
+    margin: 0
+
+.old-price
+  color: #898989
+  position: relative
+  padding: 0 3px
+  margin: 0 0 0 10px
+  &:before
+    content: ''
+    position: absolute
+    top: 50%
+    left: 0
+    transform: translate(0,-50%)
+    width: 100%
+    height: 2px
+    background: #FF103B
+
+
+.new-price
+  color: #FF103B
+  font-size: 18px
+
+.sale-item
+  position: absolute
+  z-index: 1
+  top: 12px
+  left: 12px
+  width: 50px
+  height: 21px
+  color: #fff
+  padding: 3px
+  font-size: 13px
+  font-weight: bold
+  background: #FF103B
+  border-radius: 20px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.btn-tooltip
+  position: absolute
+  width: 20px
+  height: 20px
+  z-index: 1
+  fill: $accent
+  padding: 0
+  top: 14px
+  right: 15px
+  &:hover
+    fill: #FF103B
+
+.bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before
+  display: none
+
+.bs-tooltip-right .arrow::before, .bs-tooltip-auto[x-placement^="right"] .arrow::before
+  display: none
+
+.bs-tooltip-bottom .arrow::before, .bs-tooltip-auto[x-placement^="bottom"] .arrow::before
+  display: none
+
+.bs-tooltip-left .arrow::before, .bs-tooltip-auto[x-placement^="left"] .arrow::before
+  display: none
+
+.tooltip-inner
+  padding: 0 10px
+  height: 25px
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #3E3E3E
+  font-size: 14px
+  font-weight: 500
+  background-color: #ffffff
+  border-radius: 15px
+  box-shadow: 0px 0px 4px rgba(23, 62, 121, 0.19)
+
+.btn-tooltip-no-active
+  fill: #DBDBDB
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 22px
+    height: 22px
+    background: url("../img/close-red.svg") no-repeat center
+      size: 100%
+  &:hover
+    fill: #DBDBDB
+
+.product-card-no-active
+  .product-card__name
+    color: #898989
+
+.pagination
+  border-radius: 0
+
+.pagination-nav
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  border: none
+    radius: 0
+  margin: 16px auto 0 0
+
+  .page-link
+    border: none
+    margin: 0
+    width: 25px
+    height: 26px
+    display: flex
+    align-items: center
+    justify-content: center
+    color: $accent
+    font-size: 16px
+    font-weight: 700
+    line-height: 19px
+    background: transparent
+    border-radius: 2px
+    padding: 0
+    &:hover
+      background: $accent
+      color: #fff
+  .page-item
+    margin: 0 10px 0 0
+    &:last-child
+      margin: 0
+    .page-link-text
+      width: fit-content
+      height: 29px
+      background: #E4E4E4
+      border-radius: 20px
+      padding: 0 20px
+      color: #898989
+      font-size: 14px
+      &:hover
+        background: $accent
+        color: #fff
+
+  .page-item.active .page-link
+    border-radius: 2px
+    color: #fff
+    background: $accent
+
+
+.product-card-row
+  width: 100%
+  max-width: none
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  .product-card__img
+    height: 100%
+    width: 276px
+  .product-card__body
+    width: calc(100% - 276px)
+    padding: 33px 25px 18px 22px
+    display: flex
+    flex-direction: column
+    height: auto
+  .product-card__footer
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin: auto 0 0
+  .product-card__name
+    width: 100%
+  .list-characteristic
+    margin: 25px 0 12px
+
+  .product-card__bottom
+    margin: 12px 0 0
+  .list-star
+    li
+      width: 21px
+      height: 21px
+      margin: 0 2px 0 0
+      &:last-child
+        margin: 0
+  .availability
+    margin: 0 auto 0 0
+
+.availability-no-active
+  color: #898989
+  .availability-icon
+    fill: #DBDBDB
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      width: 12px
+      height: 12px
+      background: url("../img/close-red.svg") no-repeat center
+        size: 100%
+  &:hover
+    fill: #DBDBDB
+
+.on-order
+  color: #FF103B
+  .availability-icon
+    fill: #FF103B
+
+.btn-toggle-catalog
+  margin: 60px 0 0
+/*==========  catalog end ==========*/

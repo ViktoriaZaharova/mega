@@ -46,6 +46,12 @@
   .address-box
     margin: 0 auto 0 10px
 
+  .btn-border-blue
+    min-width: auto
+
+  .product-card
+    height: 100%
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
   footer
@@ -218,10 +224,13 @@
 
   header
     padding: 7px 0 0
+
     &:before
       display: none
+
     .header-box
       display: none
+
     .logo
       margin: 0 auto 0 0
 
@@ -245,7 +254,50 @@
   .nav-breadcrumb
     margin: 0 0 23px
 
-/* Small Devices, Tablets */
+  .btn-border-blue
+    min-width: 160px
+
+  .product-section
+    .availability
+      margin: 0 0 22px
+
+  .description-product-video
+    height: 350px
+
+  .btn-play
+    width: 50px
+    height: 50px
+
+  .description-product
+    p
+      margin: 0 0 30px
+
+  .table
+    font-size: 12px
+    line-height: normal
+    p
+      margin: 0
+    span
+      font-size: 10px
+
+    thead
+      th
+        padding: 10px
+
+        &:first-child
+          font-size: 14px
+          padding: 12px 20px
+
+  .product-card
+    height: 327px
+    max-width: 280px
+    margin: 0 auto
+
+  .product-card-row
+    max-width: none
+    margin: 0
+    height: auto
+
 @media only screen and (max-width: 768px)
   footer
     .header-box
@@ -306,12 +358,15 @@
   .banner
     flex-direction: column
     align-items: flex-start
+
     &-img
       width: 100%
       height: 164px
+
     &-content
       width: 100%
       padding: 28px 20px 35px 24px
+
     h4
       margin: 0 0 9px
       width: 100%
@@ -322,12 +377,101 @@
   .products-box
     width: 100%
     margin: 0 0 36px
+
     &:nth-child(3), &:nth-child(5)
       margin: 0 0 36px
+
     &:nth-child(even)
       width: 100%
+
     &:last-child
       margin: 0
+
+  .product-gallery
+    margin: 16px 0 23px
+
+    &__item
+      height: 238px
+
+    .slick-prev
+      left: 18px
+
+    .slick-next
+      right: 18px
+
+  .product-document
+    justify-content: flex-start
+    margin: 0 0 20px
+
+    &-links
+      margin: 0 70px 0 0
+
+      &:last-child
+        margin: 0
+
+  .product-section
+    .menu-category-wrapper
+      margin: 0 0 23px
+
+    .line-wrapper
+      .btn
+        min-width: 160px
+
+  .list-characteristic
+    margin: 15px 0
+
+  .description-product
+    margin: 34px 0 36px
+
+
+  .line-wrapper
+    margin: 0
+
+  .description-product-video
+    height: 200px
+
+  .btn-play
+    width: 25px
+    height: 25px
+
+  .table
+    font-size: 16px
+    thead
+      display: none
+    tr
+      width: 100%
+      display: flex
+      flex-wrap: wrap
+      border:
+        top: 1px solid #E0E0E0
+        bottom: 1px solid #E0E0E0
+      margin: 0 0 -1px
+      padding: 16px 37px 16px 0
+      position: relative
+    tbody
+      display: flex
+      flex-wrap: wrap
+    td
+      padding: 0
+      border: none
+      &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6)
+        display: none
+      &:first-child
+        width: 65%
+      &:nth-last-child(2)
+        width: 35%
+        font-size: 18px
+      &:last-child
+        width: 35%
+        position: absolute
+        right: 30px
+        bottom: 42px
+    .list-characteristics
+      display: block
+
+  .description-product-img
+    height: 300px
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
@@ -371,14 +515,17 @@
   .popular-products-slider
     margin: 0
     padding: 0 22px
+
     .slick-prev
       left: 0
+
     .slick-next
       right: 0
 
   .popular-category
     .btn
       margin: 0 auto
+
     h2
       text-align: center
 
@@ -401,11 +548,13 @@
   header
     .header-button
       display: none
+
     .logo
       max-width: 104px
 
   .btn-search
     margin: 0 42px 0 0
+
     &.click
       -webkit-background-size: 19px
       background-size: 19px
@@ -413,8 +562,10 @@
   .form-search
     button
       min-width: 82px
+
       .btn-text
         display: none
+
       .btn-icon
         .svg-icon
           margin: 0
@@ -424,23 +575,111 @@
   .products-section
     .form-search
       margin: 30px 0 54px
+
       label
         display: none
+
       button
         position: relative
         top: 0
         right: 0
         min-width: 180px
+
       .btn-text
         display: block
         margin: 0 0 0 10px
+
+  .description-product
+    margin-bottom: 0
+
+  .description-product-img
+    height: 301px
+
+  .description-product-image
+    height: 208px
+
+  .description-product-video
+    height: 188px
+    margin: 0 0 36px
+
+  .rating-box-wrapper p
+    margin: 0 8px 0 0
+
+  .reviews-item
+    padding: 22px 0 25px
+    &__head
+      margin: 0 0 9px
+      flex-wrap: wrap
+      align-items: center
+    &__avatar
+      position: relative
+      margin: 0 8px 0 0
+      top: 0
+    .rating-box-wrapper
+      width: 100%
+      margin: 20px 0 0
+    .date-reviews
+      margin: 0 30px 0 0
+
+  .catalog-section .form-search
+    margin: 0 0 25px
+
+  .btn-toggle-catalog
+    margin: 14px 0 0
+    order: -1
+
+  .pagination-nav
+    margin: 42px 0 0
+    width: 100%
+
+  .catalog-section
+    .description-product
+      margin: 40px 0 0
+    .description-product-img
+      height: 232px
+
+  .mb-24
+    margin-bottom: 16px
+
+  .pagination-nav .page-item
+    margin: 0 2px 0 0
+
+  .product-card
+    margin: 0
+
+  .product-card-row
+    margin: 0 -15px
+    width: calc(100% + 30px)
+    .product-card__img
+      width: 100%
+      height: 284px
+
+    .product-card__body
+      padding: 0 20px 30px
+      width: 100%
+
+
 
 @media only screen and (max-width: 480px)
   .menu-category__info
     padding-right: 20px
 
 
-/* Custom, iPhone Retina */
+@media only screen and (max-width: 360px)
+  .btn-rent
+    margin: 0 0 0 8px
+
+  .product-section
+    .line-wrapper
+      .btn
+        min-width: 140px
+
+  .table tr
+    padding-right: 0
+
+  .table td:last-child
+    right: 0
+
 @media only screen and (max-width: 340px)
   footer
     .phone
