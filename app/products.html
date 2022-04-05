@@ -42,13 +42,13 @@
       </svg>
     </div>
 
-    <div class="header-box address-box">
+    <a href="#" class="header-box address-box">
       <svg class="svg-icon">
         <use xlink:href="img/sprite.svg#location"></use>
       </svg>
-      <div class="city">г. Санкт-Петербург</div>
-      <div class="address">ул. Гертьева, д. 14, лит. А, офис 100</div>
-    </div>
+      <span class="city">г. Санкт-Петербург</span>
+      <span class="address">ул. Гертьева, д. 14, лит. А, офис 100</span>
+    </a>
 
     <ul class="menu my-ul">
       <li><a href="catalog.html">Продукция</a></li>
@@ -118,13 +118,13 @@
       <div class="col-12 d-flex flex-wrap align-items-center">
         <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
 
-        <div class="header-box address-box">
+        <a href="#" class="header-box address-box">
           <svg class="svg-icon">
             <use xlink:href="img/sprite.svg#location"></use>
           </svg>
-          <div class="city">г. Санкт-Петербург</div>
-          <div class="address">ул. Гертьева, д. 14, лит. А, офис 100</div>
-        </div>
+          <span class="city">г. Санкт-Петербург</span>
+          <span class="address">ул. Гертьева, д. 14, лит. А, офис 100</span>
+        </a>
 
         <div class="header-box">
           <svg class="svg-icon">
@@ -408,10 +408,20 @@
         </div>
       </div>
 
-
-
       <div class="col-12 col-lg-9">
         <div class="content">
+          <form method="post" class="form-search form-search-dropdown">
+            <label><input type="text" placeholder="Поиск">
+              <span class="input-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#search"></use></svg></span>
+            </label>
+            <button type="submit" class="btn btn-accent">
+                  <span class="btn-icon"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#search"></use></svg></span>
+              <span class="btn-text">Поиск</span>
+            </button>
+          </form>
+
           <div class="d-block d-lg-none">
             <div class="menu-category-wrapper">
               <div class="menu-category__nav">
@@ -585,7 +595,7 @@
               dolore magna aliqua.</p>
           </div>
 
-          <form method="post" class="form-search">
+          <form method="post" class="form-search form-search-default">
             <label><input type="text" placeholder="Поиск">
               <span class="input-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></span>
             </label>
@@ -798,9 +808,9 @@
     <div class="row">
       <div class="col-12 col-md-6 col-lg-4 mb-40">
         <div class="news-card">
-          <div class="news-card__img"></div>
+          <a href="#" class="news-card__img"></a>
           <div class="news-card__body">
-            <h4>Название новости</h4>
+            <a href="#" class="news-card__title">Название новости</a>
             <div class="news-card__line">
               <p>Тема новости</p>
               <p>04.02.2021</p>
@@ -821,9 +831,9 @@
       </div>
       <div class="col-12 col-md-6 col-lg-4 mb-40">
         <div class="news-card">
-          <div class="news-card__img"></div>
+          <a href="#" class="news-card__img"></a>
           <div class="news-card__body">
-            <h4>Название новости в несколько строк и еще текст</h4>
+            <a href="#" class="news-card__title">Название новости в несколько строк и еще текст</a>
             <div class="news-card__line">
               <p>Тема новости</p>
               <p>04.02.2021</p>
@@ -844,9 +854,9 @@
       </div>
       <div class="col-12 col-md-6 col-lg-4 mb-40">
         <div class="news-card">
-          <div class="news-card__img"></div>
+          <a href="#" class="news-card__img"></a>
           <div class="news-card__body">
-            <h4>Название новости в несколько строк и еще текст</h4>
+            <a href="#" class="news-card__title">Название новости в несколько строк и еще текст</a>
             <div class="news-card__line">
               <p>Тема новости</p>
               <p>04.02.2021</p>
@@ -967,12 +977,12 @@
           <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a>
         </div>
         <div class="col-12 col-md-6 col-lg-5">
-          <div class="header-box">
+          <a href="#" class="header-box address-box">
             <svg class="svg-icon">
               <use xlink:href="img/sprite.svg#location"></use>
             </svg>
-            <div class="address"><strong>г. Санкт-Петербург,</strong> ул. Гертьева, д. 14, лит. А, офис 100</div>
-          </div>
+            <span class="address"><strong>г. Санкт-Петербург,</strong> ул. Гертьева, д. 14, лит. А, офис 100</span>
+          </a>
         </div>
       </div>
     </div>

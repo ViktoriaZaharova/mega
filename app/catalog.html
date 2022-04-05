@@ -44,13 +44,13 @@
       </svg>
     </div>
 
-    <div class="header-box address-box">
+    <a href="#" class="header-box address-box">
       <svg class="svg-icon">
         <use xlink:href="img/sprite.svg#location"></use>
       </svg>
-      <div class="city">г. Санкт-Петербург</div>
-      <div class="address">ул. Гертьева, д. 14, лит. А, офис 100</div>
-    </div>
+      <span class="city">г. Санкт-Петербург</span>
+      <span class="address">ул. Гертьева, д. 14, лит. А, офис 100</span>
+    </a>
 
     <ul class="menu my-ul">
       <li><a href="catalog.html">Продукция</a></li>
@@ -112,7 +112,6 @@
   </div>
 </div>
 
-
 <!--### HEADER ###-->
 <header>
   <div class="container">
@@ -120,13 +119,13 @@
       <div class="col-12 d-flex flex-wrap align-items-center">
         <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
 
-        <div class="header-box address-box">
+        <a href="#" class="header-box address-box">
           <svg class="svg-icon">
             <use xlink:href="img/sprite.svg#location"></use>
           </svg>
-          <div class="city">г. Санкт-Петербург</div>
-          <div class="address">ул. Гертьева, д. 14, лит. А, офис 100</div>
-        </div>
+          <span class="city">г. Санкт-Петербург</span>
+          <span class="address">ул. Гертьева, д. 14, лит. А, офис 100</span>
+        </a>
 
         <div class="header-box">
           <svg class="svg-icon">
@@ -413,6 +412,18 @@
 
       <div class="col-12 col-lg-9">
         <div class="content">
+          <form method="post" class="form-search form-search-dropdown">
+            <label><input type="text" placeholder="Поиск">
+              <span class="input-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#search"></use></svg></span>
+            </label>
+            <button type="submit" class="btn btn-accent">
+                  <span class="btn-icon"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#search"></use></svg></span>
+              <span class="btn-text">Поиск</span>
+            </button>
+          </form>
+
           <div class="d-block d-lg-none">
             <div class="menu-category-wrapper">
               <div class="menu-category__nav">
@@ -588,7 +599,7 @@
 
           <div class="row align-items-center">
             <div class="col-8 col-lg-9">
-              <form method="post" class="form-search">
+              <form method="post" class="form-search form-search-default">
                 <label><input type="text" placeholder="Поиск">
                   <span class="input-icon"><svg class="svg-icon"><use
                       xlink:href="img/sprite.svg#search"></use></svg></span>
@@ -603,7 +614,7 @@
             <div class="col-4 col-lg-3">
               <ul class="nav nav-tab nav-catalog-tab" role="tablist">
                 <li class="nav-item" role="presentation">
-                  <a class="nav-link active" id="pills-1-tab" data-toggle="pill" href="#pills-1" role="tab"
+                  <a class="nav-link" id="pills-1-tab" data-toggle="pill" href="#pills-1" role="tab"
                      aria-controls="pills-1" aria-selected="true">
                     <svg class="svg-icon">
                       <use xlink:href="img/sprite.svg#tab-icon1"></use>
@@ -611,7 +622,7 @@
                   </a>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <a class="nav-link" id="pills-2-tab" data-toggle="pill" href="#pills-2" role="tab"
+                  <a class="nav-link active" id="pills-2-tab" data-toggle="pill" href="#pills-2" role="tab"
                      aria-controls="pills-2" aria-selected="false">
                     <svg class="svg-icon">
                       <use xlink:href="img/sprite.svg#tab-icon2"></use>
@@ -622,1035 +633,8 @@
             </div>
           </div>
 
-
           <div class="tab-content tab-content-catalog">
-            <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
-              <div class="row">
-
-                <div class="col-12 col-sm-6 col-lg-4 mb-24">
-                  <div class="product-card">
-                    <div class="sale-item">-30%</div>
-                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
-                            title="под заказ">
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#availability-icon"></use>
-                      </svg>
-                    </button>
-
-                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
-                    <div class="product-card__body">
-                      <a href="product.html" class="product-card__name">Вышка тура передвижная мега-1 (1,6х0,8) - </a>
-                      <div class="product-card__bottom">
-                        <div class="price-wrapper">
-                          <div class="new-price">от 6 000 ₽</div>
-                          <div class="old-price">8 500 ₽.</div>
-                        </div>
-
-                        <ul class="list-star my-ul">
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li class="star0">
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star0"></use>
-                            </svg>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <a href="product.html" class="links-grey links">
-                        <span class="links-text">подробнее</span>
-                        <span class="links-icon"><svg class="svg-icon"><use
-                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 mb-24">
-                  <div class="product-card">
-                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
-                            title="под заказ">
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#availability-icon"></use>
-                      </svg>
-                    </button>
-
-                    <a href="product.html" class="product-card__img"><img src="img/product7.jpg" alt=""></a>
-                    <div class="product-card__body">
-                      <a href="product.html" class="product-card__name">Вышка тура передвижная </a>
-                      <div class="product-card__bottom">
-                        <div class="price-wrapper">
-                          <div class="price">от 500 ₽</div>
-                        </div>
-
-                        <ul class="list-star my-ul">
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li class="star0">
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star0"></use>
-                            </svg>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <a href="product.html" class="links-grey links">
-                        <span class="links-text">подробнее</span>
-                        <span class="links-icon"><svg class="svg-icon"><use
-                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 mb-24">
-                  <div class="product-card product-card-no-active">
-                    <button type="button" class="btn btn-tooltip btn-tooltip-no-active" data-toggle="tooltip"
-                            data-placement="top"
-                            title="нет на складе">
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#availability-icon"></use>
-                      </svg>
-                    </button>
-
-                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
-                    <div class="product-card__body">
-                      <a href="product.html" class="product-card__name">Вышка тура передвижная мега-1 (1,6х0,8) - и еще
-                        строка </a>
-                      <div class="product-card__bottom">
-                        <div class="price-wrapper">
-                          <div class="price">от 86 000 ₽</div>
-                        </div>
-
-                        <ul class="list-star my-ul">
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li class="star0">
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star0"></use>
-                            </svg>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <a href="product.html" class="links-grey links">
-                        <span class="links-text">подробнее</span>
-                        <span class="links-icon"><svg class="svg-icon"><use
-                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-4 mb-24">
-                  <div class="product-card">
-                    <div class="sale-item">-30%</div>
-                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
-                            title="под заказ">
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#availability-icon"></use>
-                      </svg>
-                    </button>
-
-                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
-                    <div class="product-card__body">
-                      <a href="product.html" class="product-card__name">Вышка тура передвижная мега-1 (1,6х0,8) - </a>
-                      <div class="product-card__bottom">
-                        <div class="price-wrapper">
-                          <div class="new-price">от 6 000 ₽</div>
-                          <div class="old-price">80 500 ₽.</div>
-                        </div>
-
-                        <ul class="list-star my-ul">
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li class="star0">
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star0"></use>
-                            </svg>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <a href="product.html" class="links-grey links">
-                        <span class="links-text">подробнее</span>
-                        <span class="links-icon"><svg class="svg-icon"><use
-                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 mb-24">
-                  <div class="product-card">
-                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
-                            title="под заказ">
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#availability-icon"></use>
-                      </svg>
-                    </button>
-
-                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
-                    <div class="product-card__body">
-                      <a href="product.html" class="product-card__name">Вышка тура передвижная </a>
-                      <div class="product-card__bottom">
-                        <div class="price-wrapper">
-                          <div class="price">от 500 ₽</div>
-                        </div>
-
-                        <ul class="list-star my-ul">
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li class="star0">
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star0"></use>
-                            </svg>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <a href="product.html" class="links-grey links">
-                        <span class="links-text">подробнее</span>
-                        <span class="links-icon"><svg class="svg-icon"><use
-                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 mb-24">
-                  <div class="product-card">
-                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
-                            title="под заказ">
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#availability-icon"></use>
-                      </svg>
-                    </button>
-
-                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
-                    <div class="product-card__body">
-                      <a href="product.html" class="product-card__name">Вышка тура передвижная мега-1 (1,6х0,8) - и еще
-                        строка </a>
-                      <div class="product-card__bottom">
-                        <div class="price-wrapper">
-                          <div class="price">от 86 000 ₽</div>
-                        </div>
-
-                        <ul class="list-star my-ul">
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li class="star0">
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star0"></use>
-                            </svg>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <a href="product.html" class="links-grey links">
-                        <span class="links-text">подробнее</span>
-                        <span class="links-icon"><svg class="svg-icon"><use
-                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-4 mb-24">
-                  <div class="product-card">
-                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
-                            title="под заказ">
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#availability-icon"></use>
-                      </svg>
-                    </button>
-
-                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
-                    <div class="product-card__body">
-                      <a href="product.html" class="product-card__name">Вышка тура передвижная </a>
-                      <div class="product-card__bottom">
-                        <div class="price-wrapper">
-                          <div class="price">от 500 ₽</div>
-                        </div>
-
-                        <ul class="list-star my-ul">
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li class="star0">
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star0"></use>
-                            </svg>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <a href="product.html" class="links-grey links">
-                        <span class="links-text">подробнее</span>
-                        <span class="links-icon"><svg class="svg-icon"><use
-                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 mb-24">
-                  <div class="product-card">
-                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
-                            title="под заказ">
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#availability-icon"></use>
-                      </svg>
-                    </button>
-
-                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
-                    <div class="product-card__body">
-                      <a href="product.html" class="product-card__name">Вышка тура передвижная мега-1 (1,6х0,8) - и еще
-                        строка </a>
-                      <div class="product-card__bottom">
-                        <div class="price-wrapper">
-                          <div class="price">от 86 000 ₽</div>
-                        </div>
-
-                        <ul class="list-star my-ul">
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li class="star0">
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star0"></use>
-                            </svg>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <a href="product.html" class="links-grey links">
-                        <span class="links-text">подробнее</span>
-                        <span class="links-icon"><svg class="svg-icon"><use
-                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 mb-24">
-                  <div class="product-card">
-                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
-                            title="под заказ">
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#availability-icon"></use>
-                      </svg>
-                    </button>
-
-                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
-                    <div class="product-card__body">
-                      <a href="product.html" class="product-card__name">Вышка тура передвижная </a>
-                      <div class="product-card__bottom">
-                        <div class="price-wrapper">
-                          <div class="price">от 500 ₽</div>
-                        </div>
-
-                        <ul class="list-star my-ul">
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li class="star0">
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star0"></use>
-                            </svg>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <a href="product.html" class="links-grey links">
-                        <span class="links-text">подробнее</span>
-                        <span class="links-icon"><svg class="svg-icon"><use
-                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-4 mb-24">
-                  <div class="product-card">
-                    <div class="sale-item">-30%</div>
-                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
-                            title="под заказ">
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#availability-icon"></use>
-                      </svg>
-                    </button>
-
-                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
-                    <div class="product-card__body">
-                      <a href="product.html" class="product-card__name">Вышка тура передвижная мега-1 (1,6х0,8) - </a>
-                      <div class="product-card__bottom">
-                        <div class="price-wrapper">
-                          <div class="new-price">от 6 000 ₽</div>
-                          <div class="old-price">8 500 ₽.</div>
-                        </div>
-
-                        <ul class="list-star my-ul">
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li class="star0">
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star0"></use>
-                            </svg>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <a href="product.html" class="links-grey links">
-                        <span class="links-text">подробнее</span>
-                        <span class="links-icon"><svg class="svg-icon"><use
-                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 mb-24">
-                  <div class="product-card">
-                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
-                            title="под заказ">
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#availability-icon"></use>
-                      </svg>
-                    </button>
-
-                    <a href="product.html" class="product-card__img"><img src="img/product7.jpg" alt=""></a>
-                    <div class="product-card__body">
-                      <a href="product.html" class="product-card__name">Вышка тура передвижная </a>
-                      <div class="product-card__bottom">
-                        <div class="price-wrapper">
-                          <div class="price">от 500 ₽</div>
-                        </div>
-
-                        <ul class="list-star my-ul">
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li class="star0">
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star0"></use>
-                            </svg>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <a href="product.html" class="links-grey links">
-                        <span class="links-text">подробнее</span>
-                        <span class="links-icon"><svg class="svg-icon"><use
-                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 mb-24">
-                  <div class="product-card product-card-no-active">
-                    <button type="button" class="btn btn-tooltip btn-tooltip-no-active" data-toggle="tooltip"
-                            data-placement="top"
-                            title="нет на складе">
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#availability-icon"></use>
-                      </svg>
-                    </button>
-
-                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
-                    <div class="product-card__body">
-                      <a href="product.html" class="product-card__name">Вышка тура передвижная мега-1 (1,6х0,8) - и еще
-                        строка </a>
-                      <div class="product-card__bottom">
-                        <div class="price-wrapper">
-                          <div class="price">от 86 000 ₽</div>
-                        </div>
-
-                        <ul class="list-star my-ul">
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li class="star0">
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star0"></use>
-                            </svg>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <a href="product.html" class="links-grey links">
-                        <span class="links-text">подробнее</span>
-                        <span class="links-icon"><svg class="svg-icon"><use
-                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-4 mb-24">
-                  <div class="product-card">
-                    <div class="sale-item">-30%</div>
-                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
-                            title="под заказ">
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#availability-icon"></use>
-                      </svg>
-                    </button>
-
-                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
-                    <div class="product-card__body">
-                      <a href="product.html" class="product-card__name">Вышка тура передвижная мега-1 (1,6х0,8) - </a>
-                      <div class="product-card__bottom">
-                        <div class="price-wrapper">
-                          <div class="new-price">от 6 000 ₽</div>
-                          <div class="old-price">80 500 ₽.</div>
-                        </div>
-
-                        <ul class="list-star my-ul">
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li class="star0">
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star0"></use>
-                            </svg>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <a href="product.html" class="links-grey links">
-                        <span class="links-text">подробнее</span>
-                        <span class="links-icon"><svg class="svg-icon"><use
-                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 mb-24">
-                  <div class="product-card">
-                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
-                            title="под заказ">
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#availability-icon"></use>
-                      </svg>
-                    </button>
-
-                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
-                    <div class="product-card__body">
-                      <a href="product.html" class="product-card__name">Вышка тура передвижная </a>
-                      <div class="product-card__bottom">
-                        <div class="price-wrapper">
-                          <div class="price">от 500 ₽</div>
-                        </div>
-
-                        <ul class="list-star my-ul">
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li class="star0">
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star0"></use>
-                            </svg>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <a href="product.html" class="links-grey links">
-                        <span class="links-text">подробнее</span>
-                        <span class="links-icon"><svg class="svg-icon"><use
-                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 mb-24">
-                  <div class="product-card">
-                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
-                            title="под заказ">
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#availability-icon"></use>
-                      </svg>
-                    </button>
-
-                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
-                    <div class="product-card__body">
-                      <a href="product.html" class="product-card__name">Вышка тура передвижная мега-1 (1,6х0,8) - и еще
-                        строка </a>
-                      <div class="product-card__bottom">
-                        <div class="price-wrapper">
-                          <div class="price">от 86 000 ₽</div>
-                        </div>
-
-                        <ul class="list-star my-ul">
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li class="star0">
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star0"></use>
-                            </svg>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <a href="product.html" class="links-grey links">
-                        <span class="links-text">подробнее</span>
-                        <span class="links-icon"><svg class="svg-icon"><use
-                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-4 mb-24">
-                  <div class="product-card">
-                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
-                            title="под заказ">
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#availability-icon"></use>
-                      </svg>
-                    </button>
-
-                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
-                    <div class="product-card__body">
-                      <a href="product.html" class="product-card__name">Вышка тура передвижная </a>
-                      <div class="product-card__bottom">
-                        <div class="price-wrapper">
-                          <div class="price">от 500 ₽</div>
-                        </div>
-
-                        <ul class="list-star my-ul">
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li class="star0">
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star0"></use>
-                            </svg>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <a href="product.html" class="links-grey links">
-                        <span class="links-text">подробнее</span>
-                        <span class="links-icon"><svg class="svg-icon"><use
-                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 mb-24">
-                  <div class="product-card">
-                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
-                            title="под заказ">
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#availability-icon"></use>
-                      </svg>
-                    </button>
-
-                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
-                    <div class="product-card__body">
-                      <a href="product.html" class="product-card__name">Вышка тура передвижная мега-1 (1,6х0,8) - и еще
-                        строка </a>
-                      <div class="product-card__bottom">
-                        <div class="price-wrapper">
-                          <div class="price">от 86 000 ₽</div>
-                        </div>
-
-                        <ul class="list-star my-ul">
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li class="star0">
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star0"></use>
-                            </svg>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <a href="product.html" class="links-grey links">
-                        <span class="links-text">подробнее</span>
-                        <span class="links-icon"><svg class="svg-icon"><use
-                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 mb-24">
-                  <div class="product-card">
-                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
-                            title="под заказ">
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#availability-icon"></use>
-                      </svg>
-                    </button>
-
-                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
-                    <div class="product-card__body">
-                      <a href="product.html" class="product-card__name">Вышка тура передвижная </a>
-                      <div class="product-card__bottom">
-                        <div class="price-wrapper">
-                          <div class="price">от 500 ₽</div>
-                        </div>
-
-                        <ul class="list-star my-ul">
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li>
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star"></use>
-                            </svg>
-                          </li>
-                          <li class="star0">
-                            <svg class="svg-icon">
-                              <use xlink:href="img/sprite.svg#star0"></use>
-                            </svg>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <a href="product.html" class="links-grey links">
-                        <span class="links-text">подробнее</span>
-                        <span class="links-icon"><svg class="svg-icon"><use
-                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12">
-                  <a href="#" class="btn btn-accent btn-toggle-catalog d-flex d-sm-none">
-                    <span class="btn-text">Показать еще</span>
-                    <span class="btn-arrow-bottom"><svg class="svg-icon"><use
-                        xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
-                  </a>
-                  <nav class="pagination-nav">
-                    <ul class="pagination">
-                      <!--              <li class="page-item">-->
-                      <!--                <a class="page-link page-link-text" href="#">В начало</a>-->
-                      <!--              </li>-->
-                      <li class="page-item active" aria-current="page">
-                        <span class="page-link">1</span>
-                      </li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">4</a></li>
-                      <li class="page-item"><a class="page-link" href="#">5</a></li>
-                      <li class="page-item"><a class="page-link" href="#">6</a></li>
-                      <li class="page-item"><a class="page-link" href="#">7</a></li>
-                      <li class="page-item"><a class="page-link" href="#">...</a></li>
-                      <li class="page-item">
-                        <a class="page-link page-link-text" href="#">Дальше</a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
+            <div class="tab-pane fade" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
               <div class="row">
                 <div class="col-12 mb-20">
                   <div class="product-card product-card-row">
@@ -2155,8 +1139,1034 @@
                 </div>
               </div>
             </div>
-          </div>
+            <div class="tab-pane fade show active" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
+              <div class="row">
 
+                <div class="col-12 col-sm-6 col-lg-4 mb-24">
+                  <div class="product-card">
+                    <div class="sale-item">-30%</div>
+                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
+                            title="есть на складе">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#availability-icon"></use>
+                      </svg>
+                    </button>
+
+                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
+                    <div class="product-card__body">
+                      <a href="product.html" class="product-card__name">Вышка тура передвижная мега-1 (1,6х0,8) - </a>
+                      <div class="product-card__bottom">
+                        <div class="price-wrapper">
+                          <div class="new-price">от 6 000 ₽</div>
+                          <div class="old-price">8 500 ₽.</div>
+                        </div>
+
+                        <ul class="list-star my-ul">
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li class="star0">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star0"></use>
+                            </svg>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <a href="product.html" class="links-grey links">
+                        <span class="links-text">подробнее</span>
+                        <span class="links-icon"><svg class="svg-icon"><use
+                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-24">
+                  <div class="product-card">
+                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
+                            title="есть на складе">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#availability-icon"></use>
+                      </svg>
+                    </button>
+
+                    <a href="product.html" class="product-card__img"><img src="img/product7.jpg" alt=""></a>
+                    <div class="product-card__body">
+                      <a href="product.html" class="product-card__name">Вышка тура передвижная </a>
+                      <div class="product-card__bottom">
+                        <div class="price-wrapper">
+                          <div class="price">от 500 ₽</div>
+                        </div>
+
+                        <ul class="list-star my-ul">
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li class="star0">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star0"></use>
+                            </svg>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <a href="product.html" class="links-grey links">
+                        <span class="links-text">подробнее</span>
+                        <span class="links-icon"><svg class="svg-icon"><use
+                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-24">
+                  <div class="product-card product-card-no-active">
+                    <button type="button" class="btn btn-tooltip btn-tooltip-no-active" data-toggle="tooltip"
+                            data-placement="top"
+                            title="нет на складе">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#availability-icon"></use>
+                      </svg>
+                    </button>
+
+                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
+                    <div class="product-card__body">
+                      <a href="product.html" class="product-card__name">Вышка тура передвижная мега-1 (1,6х0,8) - и еще
+                        строка </a>
+                      <div class="product-card__bottom">
+                        <div class="price-wrapper">
+                          <div class="price">от 86 000 ₽</div>
+                        </div>
+
+                        <ul class="list-star my-ul">
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li class="star0">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star0"></use>
+                            </svg>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <a href="product.html" class="links-grey links">
+                        <span class="links-text">подробнее</span>
+                        <span class="links-icon"><svg class="svg-icon"><use
+                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 mb-24">
+                  <div class="product-card">
+                    <div class="sale-item">-30%</div>
+                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
+                            title="есть на складе">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#availability-icon"></use>
+                      </svg>
+                    </button>
+
+                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
+                    <div class="product-card__body">
+                      <a href="product.html" class="product-card__name">Вышка тура передвижная мега-1 (1,6х0,8) - </a>
+                      <div class="product-card__bottom">
+                        <div class="price-wrapper">
+                          <div class="new-price">от 6 000 ₽</div>
+                          <div class="old-price">80 500 ₽.</div>
+                        </div>
+
+                        <ul class="list-star my-ul">
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li class="star0">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star0"></use>
+                            </svg>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <a href="product.html" class="links-grey links">
+                        <span class="links-text">подробнее</span>
+                        <span class="links-icon"><svg class="svg-icon"><use
+                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-24">
+                  <div class="product-card">
+                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
+                            title="есть на складе">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#availability-icon"></use>
+                      </svg>
+                    </button>
+
+                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
+                    <div class="product-card__body">
+                      <a href="product.html" class="product-card__name">Вышка тура передвижная </a>
+                      <div class="product-card__bottom">
+                        <div class="price-wrapper">
+                          <div class="price">от 500 ₽</div>
+                        </div>
+
+                        <ul class="list-star my-ul">
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li class="star0">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star0"></use>
+                            </svg>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <a href="product.html" class="links-grey links">
+                        <span class="links-text">подробнее</span>
+                        <span class="links-icon"><svg class="svg-icon"><use
+                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-24">
+                  <div class="product-card">
+                    <button type="button" class="btn btn-tooltip btn-tooltip-booking" data-toggle="tooltip" data-placement="top"
+                            title="под заказ">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#availability-icon"></use>
+                      </svg>
+                    </button>
+
+                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
+                    <div class="product-card__body">
+                      <a href="product.html" class="product-card__name">Вышка тура передвижная мега-1 (1,6х0,8) - и еще
+                        строка </a>
+                      <div class="product-card__bottom">
+                        <div class="price-wrapper">
+                          <div class="price">от 86 000 ₽</div>
+                        </div>
+
+                        <ul class="list-star my-ul">
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li class="star0">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star0"></use>
+                            </svg>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <a href="product.html" class="links-grey links">
+                        <span class="links-text">подробнее</span>
+                        <span class="links-icon"><svg class="svg-icon"><use
+                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 mb-24">
+                  <div class="product-card">
+                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
+                            title="есть на складе">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#availability-icon"></use>
+                      </svg>
+                    </button>
+
+                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
+                    <div class="product-card__body">
+                      <a href="product.html" class="product-card__name">Вышка тура передвижная </a>
+                      <div class="product-card__bottom">
+                        <div class="price-wrapper">
+                          <div class="price">от 500 ₽</div>
+                        </div>
+
+                        <ul class="list-star my-ul">
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li class="star0">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star0"></use>
+                            </svg>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <a href="product.html" class="links-grey links">
+                        <span class="links-text">подробнее</span>
+                        <span class="links-icon"><svg class="svg-icon"><use
+                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-24">
+                  <div class="product-card">
+                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
+                            title="есть на складе">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#availability-icon"></use>
+                      </svg>
+                    </button>
+
+                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
+                    <div class="product-card__body">
+                      <a href="product.html" class="product-card__name">Вышка тура передвижная мега-1 (1,6х0,8) - и еще
+                        строка </a>
+                      <div class="product-card__bottom">
+                        <div class="price-wrapper">
+                          <div class="price">от 86 000 ₽</div>
+                        </div>
+
+                        <ul class="list-star my-ul">
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li class="star0">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star0"></use>
+                            </svg>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <a href="product.html" class="links-grey links">
+                        <span class="links-text">подробнее</span>
+                        <span class="links-icon"><svg class="svg-icon"><use
+                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-24">
+                  <div class="product-card">
+                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
+                            title="есть на складе">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#availability-icon"></use>
+                      </svg>
+                    </button>
+
+                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
+                    <div class="product-card__body">
+                      <a href="product.html" class="product-card__name">Вышка тура передвижная </a>
+                      <div class="product-card__bottom">
+                        <div class="price-wrapper">
+                          <div class="price">от 500 ₽</div>
+                        </div>
+
+                        <ul class="list-star my-ul">
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li class="star0">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star0"></use>
+                            </svg>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <a href="product.html" class="links-grey links">
+                        <span class="links-text">подробнее</span>
+                        <span class="links-icon"><svg class="svg-icon"><use
+                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 mb-24">
+                  <div class="product-card">
+                    <div class="sale-item">-30%</div>
+                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
+                            title="есть на складе">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#availability-icon"></use>
+                      </svg>
+                    </button>
+
+                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
+                    <div class="product-card__body">
+                      <a href="product.html" class="product-card__name">Вышка тура передвижная мега-1 (1,6х0,8) - </a>
+                      <div class="product-card__bottom">
+                        <div class="price-wrapper">
+                          <div class="new-price">от 6 000 ₽</div>
+                          <div class="old-price">8 500 ₽.</div>
+                        </div>
+
+                        <ul class="list-star my-ul">
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li class="star0">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star0"></use>
+                            </svg>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <a href="product.html" class="links-grey links">
+                        <span class="links-text">подробнее</span>
+                        <span class="links-icon"><svg class="svg-icon"><use
+                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-24">
+                  <div class="product-card">
+                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
+                            title="есть на складе">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#availability-icon"></use>
+                      </svg>
+                    </button>
+
+                    <a href="product.html" class="product-card__img"><img src="img/product7.jpg" alt=""></a>
+                    <div class="product-card__body">
+                      <a href="product.html" class="product-card__name">Вышка тура передвижная </a>
+                      <div class="product-card__bottom">
+                        <div class="price-wrapper">
+                          <div class="price">от 500 ₽</div>
+                        </div>
+
+                        <ul class="list-star my-ul">
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li class="star0">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star0"></use>
+                            </svg>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <a href="product.html" class="links-grey links">
+                        <span class="links-text">подробнее</span>
+                        <span class="links-icon"><svg class="svg-icon"><use
+                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-24">
+                  <div class="product-card product-card-no-active">
+                    <button type="button" class="btn btn-tooltip btn-tooltip-no-active" data-toggle="tooltip"
+                            data-placement="top"
+                            title="нет на складе">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#availability-icon"></use>
+                      </svg>
+                    </button>
+
+                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
+                    <div class="product-card__body">
+                      <a href="product.html" class="product-card__name">Вышка тура передвижная мега-1 (1,6х0,8) - и еще
+                        строка </a>
+                      <div class="product-card__bottom">
+                        <div class="price-wrapper">
+                          <div class="price">от 86 000 ₽</div>
+                        </div>
+
+                        <ul class="list-star my-ul">
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li class="star0">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star0"></use>
+                            </svg>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <a href="product.html" class="links-grey links">
+                        <span class="links-text">подробнее</span>
+                        <span class="links-icon"><svg class="svg-icon"><use
+                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 mb-24">
+                  <div class="product-card">
+                    <div class="sale-item">-30%</div>
+                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
+                            title="есть на складе">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#availability-icon"></use>
+                      </svg>
+                    </button>
+
+                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
+                    <div class="product-card__body">
+                      <a href="product.html" class="product-card__name">Вышка тура передвижная мега-1 (1,6х0,8) - </a>
+                      <div class="product-card__bottom">
+                        <div class="price-wrapper">
+                          <div class="new-price">от 6 000 ₽</div>
+                          <div class="old-price">80 500 ₽.</div>
+                        </div>
+
+                        <ul class="list-star my-ul">
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li class="star0">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star0"></use>
+                            </svg>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <a href="product.html" class="links-grey links">
+                        <span class="links-text">подробнее</span>
+                        <span class="links-icon"><svg class="svg-icon"><use
+                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-24">
+                  <div class="product-card">
+                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
+                            title="есть на складе">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#availability-icon"></use>
+                      </svg>
+                    </button>
+
+                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
+                    <div class="product-card__body">
+                      <a href="product.html" class="product-card__name">Вышка тура передвижная </a>
+                      <div class="product-card__bottom">
+                        <div class="price-wrapper">
+                          <div class="price">от 500 ₽</div>
+                        </div>
+
+                        <ul class="list-star my-ul">
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li class="star0">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star0"></use>
+                            </svg>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <a href="product.html" class="links-grey links">
+                        <span class="links-text">подробнее</span>
+                        <span class="links-icon"><svg class="svg-icon"><use
+                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-24">
+                  <div class="product-card">
+                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
+                            title="есть на складе">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#availability-icon"></use>
+                      </svg>
+                    </button>
+
+                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
+                    <div class="product-card__body">
+                      <a href="product.html" class="product-card__name">Вышка тура передвижная мега-1 (1,6х0,8) - и еще
+                        строка </a>
+                      <div class="product-card__bottom">
+                        <div class="price-wrapper">
+                          <div class="price">от 86 000 ₽</div>
+                        </div>
+
+                        <ul class="list-star my-ul">
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li class="star0">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star0"></use>
+                            </svg>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <a href="product.html" class="links-grey links">
+                        <span class="links-text">подробнее</span>
+                        <span class="links-icon"><svg class="svg-icon"><use
+                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 mb-24">
+                  <div class="product-card">
+                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
+                            title="есть на складе">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#availability-icon"></use>
+                      </svg>
+                    </button>
+
+                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
+                    <div class="product-card__body">
+                      <a href="product.html" class="product-card__name">Вышка тура передвижная </a>
+                      <div class="product-card__bottom">
+                        <div class="price-wrapper">
+                          <div class="price">от 500 ₽</div>
+                        </div>
+
+                        <ul class="list-star my-ul">
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li class="star0">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star0"></use>
+                            </svg>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <a href="product.html" class="links-grey links">
+                        <span class="links-text">подробнее</span>
+                        <span class="links-icon"><svg class="svg-icon"><use
+                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-24">
+                  <div class="product-card">
+                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
+                            title="есть на складе">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#availability-icon"></use>
+                      </svg>
+                    </button>
+
+                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
+                    <div class="product-card__body">
+                      <a href="product.html" class="product-card__name">Вышка тура передвижная мега-1 (1,6х0,8) - и еще
+                        строка </a>
+                      <div class="product-card__bottom">
+                        <div class="price-wrapper">
+                          <div class="price">от 86 000 ₽</div>
+                        </div>
+
+                        <ul class="list-star my-ul">
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li class="star0">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star0"></use>
+                            </svg>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <a href="product.html" class="links-grey links">
+                        <span class="links-text">подробнее</span>
+                        <span class="links-icon"><svg class="svg-icon"><use
+                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-24">
+                  <div class="product-card">
+                    <button type="button" class="btn btn-tooltip" data-toggle="tooltip" data-placement="top"
+                            title="есть на складе">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#availability-icon"></use>
+                      </svg>
+                    </button>
+
+                    <a href="product.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
+                    <div class="product-card__body">
+                      <a href="product.html" class="product-card__name">Вышка тура передвижная </a>
+                      <div class="product-card__bottom">
+                        <div class="price-wrapper">
+                          <div class="price">от 500 ₽</div>
+                        </div>
+
+                        <ul class="list-star my-ul">
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                          </li>
+                          <li class="star0">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star0"></use>
+                            </svg>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <a href="product.html" class="links-grey links">
+                        <span class="links-text">подробнее</span>
+                        <span class="links-icon"><svg class="svg-icon"><use
+                            xlink:href="img/sprite.svg#arrow-link"></use></svg></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 d-flex flex-wrap align-items-end">
+                  <nav class="pagination-nav">
+                    <ul class="pagination">
+                      <!--              <li class="page-item">-->
+                      <!--                <a class="page-link page-link-text" href="#">В начало</a>-->
+                      <!--              </li>-->
+                      <li class="page-item active" aria-current="page">
+                        <span class="page-link">1</span>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                      <li class="page-item"><a class="page-link" href="#">5</a></li>
+                      <li class="page-item"><a class="page-link" href="#">6</a></li>
+                      <li class="page-item"><a class="page-link" href="#">7</a></li>
+                      <li class="page-item"><a class="page-link" href="#">...</a></li>
+                      <li class="page-item">
+                        <a class="page-link page-link-text" href="#">Дальше</a>
+                      </li>
+                    </ul>
+                  </nav>
+
+                  <a href="#" class="btn btn-accent btn-toggle-catalog">
+                    <span class="btn-text">Показать еще</span>
+                    <span class="btn-arrow-bottom"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -2281,25 +2291,25 @@
       <div class="col-12">
         <div class="certificate-slider">
           <div class="slide">
-            <div class="certificate-box"></div>
+            <a href="img/banner1.jpeg" data-fancybox="certificate" class="certificate-box"></a>
           </div>
           <div class="slide">
-            <div class="certificate-box"></div>
+            <a href="img/banner1.jpeg" data-fancybox="certificate" class="certificate-box"></a>
           </div>
           <div class="slide">
-            <div class="certificate-box"></div>
+            <a href="img/banner1.jpeg" data-fancybox="certificate" class="certificate-box"></a>
           </div>
           <div class="slide">
-            <div class="certificate-box"></div>
+            <a href="img/banner1.jpeg" data-fancybox="certificate" class="certificate-box"></a>
           </div>
           <div class="slide">
-            <div class="certificate-box"></div>
+            <a href="img/banner1.jpeg" data-fancybox="certificate" class="certificate-box"></a>
           </div>
           <div class="slide">
-            <div class="certificate-box"></div>
+            <a href="img/banner1.jpeg" data-fancybox="certificate" class="certificate-box"></a>
           </div>
           <div class="slide">
-            <div class="certificate-box"></div>
+            <a href="img/banner1.jpeg" data-fancybox="certificate" class="certificate-box"></a>
           </div>
         </div>
       </div>
@@ -2320,9 +2330,9 @@
     <div class="row">
       <div class="col-12 col-md-6 col-lg-4 mb-40">
         <div class="news-card">
-          <div class="news-card__img"></div>
+          <a href="#" class="news-card__img"></a>
           <div class="news-card__body">
-            <h4>Название новости</h4>
+            <a href="#" class="news-card__title">Название новости</a>
             <div class="news-card__line">
               <p>Тема новости</p>
               <p>04.02.2021</p>
@@ -2343,9 +2353,9 @@
       </div>
       <div class="col-12 col-md-6 col-lg-4 mb-40">
         <div class="news-card">
-          <div class="news-card__img"></div>
+          <a href="#" class="news-card__img"></a>
           <div class="news-card__body">
-            <h4>Название новости в несколько строк и еще текст</h4>
+            <a href="#" class="news-card__title">Название новости в несколько строк и еще текст</a>
             <div class="news-card__line">
               <p>Тема новости</p>
               <p>04.02.2021</p>
@@ -2366,9 +2376,9 @@
       </div>
       <div class="col-12 col-md-6 col-lg-4 mb-40">
         <div class="news-card">
-          <div class="news-card__img"></div>
+          <a href="#" class="news-card__img"></a>
           <div class="news-card__body">
-            <h4>Название новости в несколько строк и еще текст</h4>
+            <a href="#" class="news-card__title">Название новости в несколько строк и еще текст</a>
             <div class="news-card__line">
               <p>Тема новости</p>
               <p>04.02.2021</p>
@@ -2622,12 +2632,12 @@
           <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a>
         </div>
         <div class="col-12 col-md-6 col-lg-5">
-          <div class="header-box">
+          <a href="#" class="header-box address-box">
             <svg class="svg-icon">
               <use xlink:href="img/sprite.svg#location"></use>
             </svg>
-            <div class="address"><strong>г. Санкт-Петербург,</strong> ул. Гертьева, д. 14, лит. А, офис 100</div>
-          </div>
+            <span class="address"><strong>г. Санкт-Петербург,</strong> ул. Гертьева, д. 14, лит. А, офис 100</span>
+          </a>
         </div>
       </div>
     </div>

@@ -14,22 +14,21 @@ $(window).on('load resize', function() {
     }
 });
 
-$(window).on('load resize', function() {
-    if ($(window).width() > 992) {
-        $('.reviews-slider:not(.slick-initialized)').slick({
-            slidesToShow: 2,
-            arrows: true,
-            appendArrows: '.reviews-slider__nav',
-            prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
-            nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
-        });
-    }
-
-    else {
-        $(".reviews-slider.slick-initialized").slick("unslick");
-    }
+$('.reviews-slider').slick({
+    slidesToShow: 1,
+    arrows: true,
+    appendArrows: '.reviews-slider__nav',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                appendArrows: '.reviews-slider',
+            }
+        }
+    ]
 });
-// slick active
 
 $('.certificate-slider').slick({
     slidesToShow: 5,

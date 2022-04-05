@@ -41,13 +41,13 @@
       </svg>
     </div>
 
-    <div class="header-box address-box">
+    <a href="#" class="header-box address-box">
       <svg class="svg-icon">
         <use xlink:href="img/sprite.svg#location"></use>
       </svg>
-      <div class="city">г. Санкт-Петербург</div>
-      <div class="address">ул. Гертьева, д. 14, лит. А, офис 100</div>
-    </div>
+      <span class="city">г. Санкт-Петербург</span>
+      <span class="address">ул. Гертьева, д. 14, лит. А, офис 100</span>
+    </a>
 
     <ul class="menu my-ul">
       <li><a href="catalog.html">Продукция</a></li>
@@ -117,13 +117,13 @@
       <div class="col-12 d-flex flex-wrap align-items-center">
         <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
 
-        <div class="header-box address-box">
+        <a href="#" class="header-box address-box">
           <svg class="svg-icon">
             <use xlink:href="img/sprite.svg#location"></use>
           </svg>
-          <div class="city">г. Санкт-Петербург</div>
-          <div class="address">ул. Гертьева, д. 14, лит. А, офис 100</div>
-        </div>
+          <span class="city">г. Санкт-Петербург</span>
+          <span class="address">ул. Гертьева, д. 14, лит. А, офис 100</span>
+        </a>
 
         <div class="header-box">
           <svg class="svg-icon">
@@ -401,7 +401,7 @@
 
       <div class="col-12 col-lg-9">
         <div class="content">
-          <form method="post" class="form-search">
+          <form method="post" class="form-search form-search-dropdown">
             <label><input type="text" placeholder="Поиск">
               <span class="input-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></span>
             </label>
@@ -921,25 +921,25 @@
       <div class="col-12">
         <div class="certificate-slider">
           <div class="slide">
-            <div class="certificate-box"></div>
+            <a href="img/banner1.jpeg" data-fancybox="certificate" class="certificate-box"></a>
           </div>
           <div class="slide">
-            <div class="certificate-box"></div>
+            <a href="img/banner1.jpeg" data-fancybox="certificate" class="certificate-box"></a>
           </div>
           <div class="slide">
-            <div class="certificate-box"></div>
+            <a href="img/banner1.jpeg" data-fancybox="certificate" class="certificate-box"></a>
           </div>
           <div class="slide">
-            <div class="certificate-box"></div>
+            <a href="img/banner1.jpeg" data-fancybox="certificate" class="certificate-box"></a>
           </div>
           <div class="slide">
-            <div class="certificate-box"></div>
+            <a href="img/banner1.jpeg" data-fancybox="certificate" class="certificate-box"></a>
           </div>
           <div class="slide">
-            <div class="certificate-box"></div>
+            <a href="img/banner1.jpeg" data-fancybox="certificate" class="certificate-box"></a>
           </div>
           <div class="slide">
-            <div class="certificate-box"></div>
+            <a href="img/banner1.jpeg" data-fancybox="certificate" class="certificate-box"></a>
           </div>
         </div>
       </div>
@@ -960,9 +960,9 @@
     <div class="row">
       <div class="col-12 col-md-6 col-lg-4 mb-40">
         <div class="news-card">
-          <div class="news-card__img"></div>
+          <a href="#" class="news-card__img"></a>
           <div class="news-card__body">
-            <h4>Название новости</h4>
+            <a href="#" class="news-card__title">Название новости</a>
             <div class="news-card__line">
               <p>Тема новости</p>
               <p>04.02.2021</p>
@@ -983,9 +983,9 @@
       </div>
       <div class="col-12 col-md-6 col-lg-4 mb-40">
         <div class="news-card">
-          <div class="news-card__img"></div>
+          <a href="#" class="news-card__img"></a>
           <div class="news-card__body">
-            <h4>Название новости в несколько строк и еще текст</h4>
+            <a href="#" class="news-card__title">Название новости в несколько строк и еще текст</a>
             <div class="news-card__line">
               <p>Тема новости</p>
               <p>04.02.2021</p>
@@ -1006,9 +1006,9 @@
       </div>
       <div class="col-12 col-md-6 col-lg-4 mb-40">
         <div class="news-card">
-          <div class="news-card__img"></div>
+          <a href="#" class="news-card__img"></a>
           <div class="news-card__body">
-            <h4>Название новости в несколько строк и еще текст</h4>
+            <a href="#" class="news-card__title">Название новости в несколько строк и еще текст</a>
             <div class="news-card__line">
               <p>Тема новости</p>
               <p>04.02.2021</p>
@@ -1188,7 +1188,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-lg-4 offset-lg-1">
+      <div class="col-12 col-lg-4">
         <div class="rating-box">
           <div class="rating-box-wrapper">
             <p>Средний рейтинг</p>
@@ -1233,191 +1233,385 @@
       <div class="col-12">
         <div class="reviews-slider">
           <div class="slide">
-            <div class="reviews-slider-box">
-              <div class="reviews-slider-box__head">
-                <div class="reviews-slider-box__wrap">
-                  <div class="reviews-slider-box__name">
-                    <h4>Имя фамилия</h4>
-                    <p>Название продукции</p>
+            <div class="reviews-slider-wrapper">
+              <div class="reviews-slider-box">
+                <div class="reviews-slider-box__head">
+                  <div class="reviews-slider-box__wrap">
+                    <div class="reviews-slider-box__name">
+                      <h4>Имя фамилия</h4>
+                      <p>Название продукции</p>
+                    </div>
+                    <ul class="list-star my-ul">
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star0"></use>
+                        </svg>
+                      </li>
+                    </ul>
                   </div>
-                  <ul class="list-star my-ul">
-                    <li>
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#star"></use>
-                      </svg>
-                    </li>
-                    <li>
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#star"></use>
-                      </svg>
-                    </li>
-                    <li>
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#star"></use>
-                      </svg>
-                    </li>
-                    <li>
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#star"></use>
-                      </svg>
-                    </li>
-                    <li class="star0">
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#star0"></use>
-                      </svg>
-                    </li>
-                  </ul>
+                </div>
+                <div class="reviews-slider-box__body">
+                  <div class="box-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                      eiusmod tempor </p>
+                  </div>
                 </div>
               </div>
-              <div class="reviews-slider-box__body">
-                <div class="box-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod tempor </p>
+              <div class="reviews-slider-box">
+                <div class="reviews-slider-box__head">
+                  <div class="reviews-slider-box__avatar"><img src="img/photo.png" alt=""></div>
+                  <div class="reviews-slider-box__wrap">
+                    <div class="reviews-slider-box__name">
+                      <h4>Имя фамилия</h4>
+                      <p>Название продукции</p>
+                    </div>
+                    <ul class="list-star my-ul">
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="reviews-slider-box__body">
+                  <div class="box-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                      eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                      eiusmod </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="slide">
-            <div class="reviews-slider-box">
-              <div class="reviews-slider-box__head">
-                <div class="reviews-slider-box__avatar"><img src="img/photo.png" alt=""></div>
-                <div class="reviews-slider-box__wrap">
-                  <div class="reviews-slider-box__name">
-                    <h4>Имя фамилия</h4>
-                    <p>Название продукции</p>
+            <div class="reviews-slider-wrapper">
+              <div class="reviews-slider-box">
+                <div class="reviews-slider-box__head">
+                  <div class="reviews-slider-box__wrap">
+                    <div class="reviews-slider-box__name">
+                      <h4>Имя фамилия</h4>
+                      <p>Название продукции</p>
+                    </div>
+                    <ul class="list-star my-ul">
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star0"></use>
+                        </svg>
+                      </li>
+                    </ul>
                   </div>
-                  <ul class="list-star my-ul">
-                    <li>
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#star"></use>
-                      </svg>
-                    </li>
-                    <li>
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#star"></use>
-                      </svg>
-                    </li>
-                    <li>
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#star"></use>
-                      </svg>
-                    </li>
-                    <li>
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#star"></use>
-                      </svg>
-                    </li>
-                    <li>
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#star"></use>
-                      </svg>
-                    </li>
-                  </ul>
+                </div>
+                <div class="reviews-slider-box__body">
+                  <div class="box-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                      eiusmod tempor </p>
+                  </div>
                 </div>
               </div>
-              <div class="reviews-slider-box__body">
-                <div class="box-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod </p>
+              <div class="reviews-slider-box">
+                <div class="reviews-slider-box__head">
+                  <div class="reviews-slider-box__avatar"><img src="img/photo.png" alt=""></div>
+                  <div class="reviews-slider-box__wrap">
+                    <div class="reviews-slider-box__name">
+                      <h4>Имя фамилия</h4>
+                      <p>Название продукции</p>
+                    </div>
+                    <ul class="list-star my-ul">
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="reviews-slider-box__body">
+                  <div class="box-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                      eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                      eiusmod </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="slide">
-            <div class="reviews-slider-box">
-              <div class="reviews-slider-box__head">
-                <div class="reviews-slider-box__wrap">
-                  <div class="reviews-slider-box__name">
-                    <h4>Имя фамилия</h4>
-                    <p>Название продукции</p>
+            <div class="reviews-slider-wrapper">
+              <div class="reviews-slider-box">
+                <div class="reviews-slider-box__head">
+                  <div class="reviews-slider-box__wrap">
+                    <div class="reviews-slider-box__name">
+                      <h4>Имя фамилия</h4>
+                      <p>Название продукции</p>
+                    </div>
+                    <ul class="list-star my-ul">
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star0"></use>
+                        </svg>
+                      </li>
+                    </ul>
                   </div>
-                  <ul class="list-star my-ul">
-                    <li>
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#star"></use>
-                      </svg>
-                    </li>
-                    <li>
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#star"></use>
-                      </svg>
-                    </li>
-                    <li>
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#star"></use>
-                      </svg>
-                    </li>
-                    <li>
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#star"></use>
-                      </svg>
-                    </li>
-                    <li class="star0">
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#star0"></use>
-                      </svg>
-                    </li>
-                  </ul>
+                </div>
+                <div class="reviews-slider-box__body">
+                  <div class="box-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                      eiusmod tempor </p>
+                  </div>
                 </div>
               </div>
-              <div class="reviews-slider-box__body">
-                <div class="box-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod tempor </p>
+              <div class="reviews-slider-box">
+                <div class="reviews-slider-box__head">
+                  <div class="reviews-slider-box__avatar"><img src="img/photo.png" alt=""></div>
+                  <div class="reviews-slider-box__wrap">
+                    <div class="reviews-slider-box__name">
+                      <h4>Имя фамилия</h4>
+                      <p>Название продукции</p>
+                    </div>
+                    <ul class="list-star my-ul">
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="reviews-slider-box__body">
+                  <div class="box-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                      eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                      eiusmod </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="slide">
-            <div class="reviews-slider-box">
-              <div class="reviews-slider-box__head">
-                <div class="reviews-slider-box__avatar"><img src="img/photo.png" alt=""></div>
-                <div class="reviews-slider-box__wrap">
-                  <div class="reviews-slider-box__name">
-
-                    <h4>Имя фамилия</h4>
-                    <p>Название продукции</p>
+            <div class="reviews-slider-wrapper">
+              <div class="reviews-slider-box">
+                <div class="reviews-slider-box__head">
+                  <div class="reviews-slider-box__wrap">
+                    <div class="reviews-slider-box__name">
+                      <h4>Имя фамилия</h4>
+                      <p>Название продукции</p>
+                    </div>
+                    <ul class="list-star my-ul">
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star0"></use>
+                        </svg>
+                      </li>
+                    </ul>
                   </div>
-                  <ul class="list-star my-ul">
-                    <li>
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#star"></use>
-                      </svg>
-                    </li>
-                    <li>
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#star"></use>
-                      </svg>
-                    </li>
-                    <li>
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#star"></use>
-                      </svg>
-                    </li>
-                    <li>
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#star"></use>
-                      </svg>
-                    </li>
-                    <li>
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#star"></use>
-                      </svg>
-                    </li>
-                  </ul>
+                </div>
+                <div class="reviews-slider-box__body">
+                  <div class="box-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                      eiusmod tempor </p>
+                  </div>
                 </div>
               </div>
-              <div class="reviews-slider-box__body">
-                <div class="box-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod tempor </p>
+              <div class="reviews-slider-box">
+                <div class="reviews-slider-box__head">
+                  <div class="reviews-slider-box__avatar"><img src="img/photo.png" alt=""></div>
+                  <div class="reviews-slider-box__wrap">
+                    <div class="reviews-slider-box__name">
+                      <h4>Имя фамилия</h4>
+                      <p>Название продукции</p>
+                    </div>
+                    <ul class="list-star my-ul">
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="reviews-slider-box__body">
+                  <div class="box-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                      eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                      eiusmod </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1692,12 +1886,12 @@
           <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a>
         </div>
         <div class="col-12 col-md-6 col-lg-5">
-          <div class="header-box">
+          <a href="#" class="header-box address-box">
             <svg class="svg-icon">
               <use xlink:href="img/sprite.svg#location"></use>
             </svg>
-            <div class="address"><strong>г. Санкт-Петербург,</strong> ул. Гертьева, д. 14, лит. А, офис 100</div>
-          </div>
+            <span class="address"><strong>г. Санкт-Петербург,</strong> ул. Гертьева, д. 14, лит. А, офис 100</span>
+          </a>
         </div>
       </div>
     </div>
@@ -1770,9 +1964,9 @@
         </button>
       </div>
       <div class="modal-body">
-<div class="box-text">
-  <p>мы свяжемся с вами в ближайшее время</p>
-</div>
+        <div class="box-text">
+          <p>мы свяжемся с вами в ближайшее время</p>
+        </div>
         <a href="#" class="btn btn-accent">Закрыть</a>
 
       </div>

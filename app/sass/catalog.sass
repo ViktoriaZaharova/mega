@@ -3,7 +3,6 @@
 /*==========  catalog  ==========*/
 .catalog-section
   .form-search
-    display: flex
     max-width: none
     margin: 0 0 15px
   .box-text
@@ -61,7 +60,8 @@
   &__name
     color: #000000
     font-size: 18px
-    font-weight: 900
+    font-weight: 700
+    margin: 0 0 8px
     &:hover
       color: $accent
   &__bottom
@@ -141,8 +141,6 @@
   padding: 0
   top: 14px
   right: 15px
-  &:hover
-    fill: #FF103B
 
 .bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before
   display: none
@@ -183,6 +181,11 @@
       size: 100%
   &:hover
     fill: #DBDBDB
+
+.btn-tooltip-booking
+  fill: #FF103B
+  &:hover
+    fill: #FF103B
 
 .product-card-no-active
   .product-card__name
@@ -302,4 +305,5 @@
 
 .btn-toggle-catalog
   margin: 60px 0 0
+
 /*==========  catalog end ==========*/

@@ -16,7 +16,7 @@ $('.btn-close').on('click', function () {
 $('.btn-search').on('click', function (e) {
     e.preventDefault();
     $(this).toggleClass('click');
-    $('.form-search').fadeToggle();
+    $('.form-search-dropdown').fadeToggle();
 });
 
 $(".menu-category__links").on('click', function (e) {
