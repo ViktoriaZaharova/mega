@@ -274,6 +274,8 @@ header {
         color: #000000; }
         .mobile-menu .menu li a:hover {
           color: #339EC9; }
+      .mobile-menu .menu li > a {
+        font-weight: bold; }
       .mobile-menu .menu li .btn-dropdown {
         line-height: normal;
         height: auto;
